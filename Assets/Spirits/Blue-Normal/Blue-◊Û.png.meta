@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: b0402232597b4754589aeb537da73e61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -345099672462552866
+    second: "Blue-\u5DE6_0"
+  - first:
+      213: -4743416818681277662
+    second: "Blue-\u5DE6_1"
+  - first:
+      213: 5537863953779343087
+    second: "Blue-\u5DE6_2"
+  - first:
+      213: 530056531916933253
+    second: "Blue-\u5DE6_3"
+  - first:
+      213: 633136154108676705
+    second: "Blue-\u5DE6_4"
+  - first:
+      213: -7701132119243586069
+    second: "Blue-\u5DE6_5"
+  - first:
+      213: -5434194819551255646
+    second: "Blue-\u5DE6_6"
+  - first:
+      213: 7153077403914399580
+    second: "Blue-\u5DE6_7"
+  - first:
+      213: -6811465722117112917
+    second: "Blue-\u5DE6_8"
+  - first:
+      213: 3426636472966882508
+    second: "Blue-\u5DE6_9"
+  - first:
+      213: 3550281831675733037
+    second: "Blue-\u5DE6_10"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_0"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 383
+        width: 70
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed014c22da5f53bf0800000000000000
+      internalID: -345099672462552866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_1"
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 382
+        width: 47
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22393ecf88ffb2eb0800000000000000
+      internalID: -4743416818681277662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_2"
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 383
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee3573dce17adc40800000000000000
+      internalID: 5537863953779343087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_3"
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 259
+        width: 62
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588c8cf7b932b5700800000000000000
+      internalID: 530056531916933253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_4"
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 258
+        width: 70
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16aca184af959c800800000000000000
+      internalID: 633136154108676705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_5"
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 258
+        width: 54
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be58220d325102590800000000000000
+      internalID: -7701132119243586069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_6"
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 127
+        width: 46
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3216c6a9cd594b0800000000000000
+      internalID: -5434194819551255646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_7"
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 127
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fe03f0006d44360800000000000000
+      internalID: 7153077403914399580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_8"
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 127
+        width: 86
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: babb571b300d871a0800000000000000
+      internalID: -6811465722117112917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_9"
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 78
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4a69197bbdd8f20800000000000000
+      internalID: 3426636472966882508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Blue-\u5DE6_10"
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 70
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d242e850482254130800000000000000
+      internalID: 3550281831675733037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: eae40343224b093438870b57186c9720
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "Blue-\u5DE6_0": -345099672462552866
+      "Blue-\u5DE6_1": -4743416818681277662
+      "Blue-\u5DE6_10": 3550281831675733037
+      "Blue-\u5DE6_2": 5537863953779343087
+      "Blue-\u5DE6_3": 530056531916933253
+      "Blue-\u5DE6_4": 633136154108676705
+      "Blue-\u5DE6_5": -7701132119243586069
+      "Blue-\u5DE6_6": -5434194819551255646
+      "Blue-\u5DE6_7": 7153077403914399580
+      "Blue-\u5DE6_8": -6811465722117112917
+      "Blue-\u5DE6_9": 3426636472966882508
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
