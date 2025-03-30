@@ -11,6 +11,7 @@ public class SlimeController : MonoBehaviour
     public float jumpDisableCollisionTime = 0.05f; // Time to ignore collision status after a wall jump
 
     private Rigidbody2D rb;
+    private Animator animator;
 
     private enum SurfaceType { None, Floor, Wall, Ceiling }
     private SurfaceType currentSurface = SurfaceType.None;
@@ -22,6 +23,7 @@ public class SlimeController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         rb.freezeRotation = true;
     }
 
@@ -29,7 +31,24 @@ public class SlimeController : MonoBehaviour
     {
         HandleInput();
 
-        // Draw a ray indicating the current surface normal (green if attached, red if in air)
+        // Update animator parameters for idle/move/jump
+        float speed = Mathf.Abs(rb.velocity.x);
+        animator.SetFloat("Speed", speed); // Speed parameter is used for walking/running
+
+        // Flip sprite based on horizontal movement direction
+        if (rb.velocity.x > 0.1f)
+        {
+            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+        }
+        else if (rb.velocity.x < -0.1f)
+        {
+            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+        }
+
+        // Set IsJumping to true when the slime is in the air (i.e. not on the floor)
+        animator.SetBool("IsJumping", !IsGrounded());
+
+        // Debug: Draw a ray indicating the current surface normal (green if attached, red if in air)
         Color rayColor = currentSurface == SurfaceType.None ? Color.red : Color.green;
         Debug.DrawRay(transform.position, GetNormalFromSurface() * 0.5f, rayColor);
 
@@ -145,6 +164,7 @@ public class SlimeController : MonoBehaviour
                 case SurfaceType.Floor:
                     rb.velocity = new Vector2(rb.velocity.x, 0);
                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    currentSurface = SurfaceType.None; // Mark as airborne so IsGrounded() returns false
                     Debug.Log("[Jump] Floor jump");
                     break;
 
@@ -186,7 +206,7 @@ public class SlimeController : MonoBehaviour
         rb.gravityScale = 3f;
         rb.velocity = Vector2.zero;
         rb.AddForce(jumpDir * wallJumpForce, ForceMode2D.Impulse);
-        currentSurface = SurfaceType.None;
+        currentSurface = SurfaceType.None; // Mark as airborne
 
         Debug.Log("[Wall Jump] Executed jump in direction: " + jumpDir);
 
@@ -197,6 +217,7 @@ public class SlimeController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         isJumping = false;
+        // The animator's IsJumping bool is now solely controlled in Update via IsGrounded()
     }
 
     void MoveHorizontal()
@@ -216,6 +237,11 @@ public class SlimeController : MonoBehaviour
     {
         float v = Input.GetAxisRaw("Vertical");
         rb.velocity = new Vector2(0f, v * climbSpeed);
+    }
+
+    bool IsGrounded()
+    {
+        return currentSurface == SurfaceType.Floor;
     }
 
     void ReportSurfaceChange(SurfaceType newSurface)
