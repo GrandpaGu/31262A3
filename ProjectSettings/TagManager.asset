@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - BonusCherry
+  - Hazard
+  - Fire
+  - StickyWall
   layers:
   - Default
   - TransparentFX
