@@ -17,9 +17,11 @@ public class SlimeController : MonoBehaviour
     private Vector3 originalScale;
     private Vector3 crouchScale;
 
+    [Header("Wall Stick Settings")]
+    public bool canStickToWall = true; // Toggle wall-sticking ability
+
     private Rigidbody2D rb;
     private CircleCollider2D circleCollider;
-    private GameManager gameManager;
 
     private bool isOnWall = false;
     private Vector2 wallNormal;
@@ -29,7 +31,6 @@ public class SlimeController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         circleCollider = GetComponent<CircleCollider2D>();
-        gameManager = FindObjectOfType<GameManager>();
 
         rb.freezeRotation = true;
         rb.gravityScale = defaultGravityScale;
@@ -52,7 +53,7 @@ public class SlimeController : MonoBehaviour
         if (isOnWall)
         {
             rb.gravityScale = 0f;
-            StickToWall(); // 保持吸附
+            StickToWall();
             MoveVertical();
         }
         else
@@ -133,13 +134,13 @@ public class SlimeController : MonoBehaviour
         if (other.CompareTag("Fire"))
         {
             Debug.Log("[Trigger] Slime touched fire! Respawning...");
-            gameManager?.RespawnSlime();
+            // gameManager?.RespawnSlime(); // Remove GameManager reference temporarily
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (isWallJumping) return;
+        if (isWallJumping || !canStickToWall) return;
 
         foreach (ContactPoint2D contact in collision.contacts)
         {
@@ -163,7 +164,6 @@ public class SlimeController : MonoBehaviour
 
     void StickToWall()
     {
-        // 持续推向墙体法线反方向，保持吸附
-        rb.AddForce(-wallNormal * 20f); // 20f 可以调整大小
+        rb.AddForce(-wallNormal * 20f);
     }
 }
