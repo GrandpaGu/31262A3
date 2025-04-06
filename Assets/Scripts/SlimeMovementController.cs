@@ -18,7 +18,14 @@ public class SlimeController : MonoBehaviour
     private Vector3 crouchScale;
 
     [Header("Wall Stick Settings")]
-    public bool canStickToWall = true; // Toggle wall-sticking ability
+    public bool canStickToWall = false; // Toggle wall-sticking ability
+
+    [Header("Ground Check")]
+    public Transform groundCheckPoint;
+    public float groundCheckRadius = 0.2f;
+    public LayerMask groundLayer;
+
+    private bool isGrounded;
 
     private Rigidbody2D rb;
     private CircleCollider2D circleCollider;
@@ -45,12 +52,19 @@ public class SlimeController : MonoBehaviour
 
     void Update()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         HandleInput();
+        if (!canStickToWall && isOnWall)
+        {
+            isOnWall = false;
+            rb.gravityScale = defaultGravityScale;
+        }
     }
 
     void FixedUpdate()
     {
-        if (isOnWall)
+        
+        if (isOnWall && canStickToWall)
         {
             rb.gravityScale = 0f;
             StickToWall();
@@ -88,6 +102,12 @@ public class SlimeController : MonoBehaviour
                 isWallJumping = true;
                 Invoke(nameof(ResetWallJump), jumpDisableCollisionTime);
                 Debug.Log("[Wall Jump] Executed");
+            }
+            else if (isGrounded)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, 0);
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                Debug.Log("[Jump] Normal jump");
             }
             else
             {
@@ -140,7 +160,13 @@ public class SlimeController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (isWallJumping || !canStickToWall) return;
+        if (isWallJumping) return;
+
+        // Only process wall sticking if it's enabled
+        if (!canStickToWall)
+        {
+            return;
+        }
 
         foreach (ContactPoint2D contact in collision.contacts)
         {
@@ -153,8 +179,6 @@ public class SlimeController : MonoBehaviour
                 return;
             }
         }
-
-        isOnWall = false;
     }
 
     void OnCollisionExit2D(Collision2D collision)
