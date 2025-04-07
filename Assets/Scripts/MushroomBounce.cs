@@ -1,10 +1,14 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class MushroomBounce : MonoBehaviour
 {
     public float bounceForce = 12f;    
     public float squishAmount = 0.8f;    
-    public float squishTime = 0.1f;      
+    public float squishTime = 0.1f;
+
+    private AudioSource audioSource;
+    public AudioClip bounce;
 
     private Vector3 originalScale;
     private Vector3 originalPosition;
@@ -13,6 +17,7 @@ public class MushroomBounce : MonoBehaviour
     {
         originalScale = transform.localScale;
         originalPosition = transform.position;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -27,10 +32,31 @@ public class MushroomBounce : MonoBehaviour
                     rb.velocity = new Vector2(rb.velocity.x, 0f);
                     rb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
                     StartCoroutine(SquashEffect());
+
+                    PlayBounceSound();
+                    
                 }
             }
         }
     }
+
+    void PlayBounceSound()
+    {
+        if (audioSource != null && bounce != null)
+        {
+            audioSource.clip = bounce;
+            audioSource.time = 0.05f;
+            audioSource.volume = 0.5f;
+            audioSource.Play();
+        }
+    }
+
+
+
+
+
+
+
 
     System.Collections.IEnumerator SquashEffect()
     {
