@@ -34,6 +34,9 @@ public class SlimeController : MonoBehaviour
     private Vector2 wallNormal;
     private bool isWallJumping = false;
 
+    [Header("Animator")]
+    public Animator animator;  
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -48,22 +51,26 @@ public class SlimeController : MonoBehaviour
         }
         originalScale = transform.localScale;
         crouchScale = new Vector3(originalScale.x, originalScale.y * 0.5f, originalScale.z);
+
+        animator = GetComponent<Animator>();  
     }
 
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
         HandleInput();
+
         if (!canStickToWall && isOnWall)
         {
             isOnWall = false;
             rb.gravityScale = defaultGravityScale;
         }
+
+        UpdateAnimationParameters();  
     }
 
     void FixedUpdate()
     {
-        
         if (isOnWall && canStickToWall)
         {
             rb.gravityScale = 0f;
@@ -136,6 +143,8 @@ public class SlimeController : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(h * moveSpeed, rb.velocity.y);
+
+        animator.SetFloat("Speed", Mathf.Abs(h));  
     }
 
     void MoveVertical()
@@ -162,11 +171,7 @@ public class SlimeController : MonoBehaviour
     {
         if (isWallJumping) return;
 
-        // Only process wall sticking if it's enabled
-        if (!canStickToWall)
-        {
-            return;
-        }
+        if (!canStickToWall) return;
 
         foreach (ContactPoint2D contact in collision.contacts)
         {
@@ -189,5 +194,10 @@ public class SlimeController : MonoBehaviour
     void StickToWall()
     {
         rb.AddForce(-wallNormal * 20f);
+    }
+
+    void UpdateAnimationParameters()
+    { 
+        animator.SetBool("IsJumping", !isGrounded); 
     }
 }
