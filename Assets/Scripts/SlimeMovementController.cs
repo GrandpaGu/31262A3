@@ -35,7 +35,7 @@ public class SlimeController : MonoBehaviour
     private bool isWallJumping = false;
 
     [Header("Animator")]
-    public Animator animator;  
+    public Animator animator;
 
     void Start()
     {
@@ -52,25 +52,26 @@ public class SlimeController : MonoBehaviour
         originalScale = transform.localScale;
         crouchScale = new Vector3(originalScale.x, originalScale.y * 0.5f, originalScale.z);
 
-        animator = GetComponent<Animator>();  
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
-        HandleInput();
-
+        
         if (!canStickToWall && isOnWall)
         {
             isOnWall = false;
             rb.gravityScale = defaultGravityScale;
         }
 
-        UpdateAnimationParameters();  
+        UpdateAnimationParameters();
     }
 
     void FixedUpdate()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
+        HandleInput();
+        
         if (isOnWall && canStickToWall)
         {
             rb.gravityScale = 0f;
@@ -144,7 +145,12 @@ public class SlimeController : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(h * moveSpeed, rb.velocity.y);
 
-        animator.SetFloat("Speed", Mathf.Abs(h));  
+        animator.SetFloat("Speed", Mathf.Abs(h));
+
+        if (h != 0)
+        {
+            transform.localScale = new Vector3(Mathf.Sign(h) * Mathf.Abs(originalScale.x), transform.localScale.y, transform.localScale.z);
+        }
     }
 
     void MoveVertical()
@@ -197,7 +203,7 @@ public class SlimeController : MonoBehaviour
     }
 
     void UpdateAnimationParameters()
-    { 
-        animator.SetBool("IsJumping", !isGrounded); 
+    {
+        animator.SetBool("IsJumping", !isGrounded);
     }
 }
