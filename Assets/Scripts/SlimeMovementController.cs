@@ -128,6 +128,17 @@ public class SlimeController : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(h * moveSpeed, rb.velocity.y);
         if (animator) animator.SetFloat("Speed", Mathf.Abs(h));
+        
+        if (h < 0)
+        {
+           // flip if going left
+            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+        }
+        else if (h > 0)
+        {
+            // flip when going right
+            transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+        }
     }
 
     void MoveVertical()
