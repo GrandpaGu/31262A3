@@ -57,7 +57,14 @@ public class SlimeController : MonoBehaviour
 
     void Update()
     {
-        
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
+        HandleInput();
+
+        if (isGrounded)
+        {
+            Debug.Log("Character is grounded.");
+        }
+
         if (!canStickToWall && isOnWall)
         {
             isOnWall = false;
@@ -69,9 +76,8 @@ public class SlimeController : MonoBehaviour
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
-        HandleInput();
-        
+        UpdateAnimationParameters();
+
         if (isOnWall && canStickToWall)
         {
             rb.gravityScale = 0f;
@@ -89,6 +95,7 @@ public class SlimeController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+
             if (isOnWall)
             {
                 Vector2 jumpDir = Vector2.up;
@@ -114,7 +121,7 @@ public class SlimeController : MonoBehaviour
             else if (isGrounded)
             {
                 rb.velocity = new Vector2(rb.velocity.x, 0);
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);                
                 Debug.Log("[Jump] Normal jump");
             }
             else
@@ -204,6 +211,14 @@ public class SlimeController : MonoBehaviour
 
     void UpdateAnimationParameters()
     {
-        animator.SetBool("IsJumping", !isGrounded);
+        if (isGrounded)
+        {
+            animator.SetBool("IsJumping", false); 
+        }
+        else
+        {
+            animator.SetBool("IsJumping", true); 
+        }
     }
+
 }

@@ -248,7 +248,18 @@ MonoBehaviour:
   climbSpeed: 3
   jumpForce: 12
   wallJumpForce: 10
+  defaultGravityScale: 3
   jumpDisableCollisionTime: 0.05
+  enableCrouch: 1
+  normalColliderRadius: 0.5
+  crouchColliderRadius: 0.25
+  canStickToWall: 0
+  groundCheckPoint: {fileID: 1062107115}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  animator: {fileID: 302564666}
 --- !u!212 &302564662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -464,7 +475,7 @@ GameObject:
   - component: {fileID: 1062107116}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
