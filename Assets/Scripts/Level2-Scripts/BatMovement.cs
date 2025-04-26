@@ -18,6 +18,7 @@ public class BatController : MonoBehaviour
     private bool isPatrolling = false;   // 是否已经开始巡逻
     private Transform targetPoint;       // 当前巡逻的目标点
 
+
     void Start()
     {
         animator = GetComponent<Animator>();   // 获取Animator组件
