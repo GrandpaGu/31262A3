@@ -1,0 +1,2514 @@
+fileFormatVersion: 2
+guid: b799f822eb1fb5843aef1dcea256dfa0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3745591400884085913
+    second: animals3_shadowless_2x_0
+  - first:
+      213: 7610057409682257725
+    second: animals3_shadowless_2x_1
+  - first:
+      213: -8058528035896475031
+    second: animals3_shadowless_2x_2
+  - first:
+      213: -2629683719639058599
+    second: animals3_shadowless_2x_3
+  - first:
+      213: -1595131503945694081
+    second: animals3_shadowless_2x_4
+  - first:
+      213: 3847410993215715683
+    second: animals3_shadowless_2x_5
+  - first:
+      213: 3515351769739824061
+    second: animals3_shadowless_2x_6
+  - first:
+      213: 4939922146853469073
+    second: animals3_shadowless_2x_7
+  - first:
+      213: -3110878433767315211
+    second: animals3_shadowless_2x_8
+  - first:
+      213: 1210125360431474909
+    second: animals3_shadowless_2x_9
+  - first:
+      213: -805033670622998637
+    second: animals3_shadowless_2x_10
+  - first:
+      213: -5352627925137880637
+    second: animals3_shadowless_2x_11
+  - first:
+      213: 5397970566808671180
+    second: animals3_shadowless_2x_12
+  - first:
+      213: 7220579511285301149
+    second: animals3_shadowless_2x_13
+  - first:
+      213: -4502249482336734488
+    second: animals3_shadowless_2x_14
+  - first:
+      213: 4780280856208800032
+    second: animals3_shadowless_2x_15
+  - first:
+      213: -4568178846868796797
+    second: animals3_shadowless_2x_16
+  - first:
+      213: 3176604940914356499
+    second: animals3_shadowless_2x_17
+  - first:
+      213: -8141369896157912882
+    second: animals3_shadowless_2x_18
+  - first:
+      213: -3603575640697532261
+    second: animals3_shadowless_2x_19
+  - first:
+      213: 660407921415056899
+    second: animals3_shadowless_2x_20
+  - first:
+      213: 1720163331055158136
+    second: animals3_shadowless_2x_21
+  - first:
+      213: -9082675352020248629
+    second: animals3_shadowless_2x_22
+  - first:
+      213: 2646120033954887847
+    second: animals3_shadowless_2x_23
+  - first:
+      213: -277220285309595835
+    second: animals3_shadowless_2x_24
+  - first:
+      213: 6538345065963497966
+    second: animals3_shadowless_2x_25
+  - first:
+      213: -2197474918882447111
+    second: animals3_shadowless_2x_26
+  - first:
+      213: 8284319026600765930
+    second: animals3_shadowless_2x_27
+  - first:
+      213: 4847571561299537332
+    second: animals3_shadowless_2x_28
+  - first:
+      213: 2396368051651974590
+    second: animals3_shadowless_2x_29
+  - first:
+      213: -6649446813805092848
+    second: animals3_shadowless_2x_30
+  - first:
+      213: -9190747121223829672
+    second: animals3_shadowless_2x_31
+  - first:
+      213: -2212551834739974584
+    second: animals3_shadowless_2x_32
+  - first:
+      213: 290617149668742989
+    second: animals3_shadowless_2x_33
+  - first:
+      213: -6716019177935000499
+    second: animals3_shadowless_2x_34
+  - first:
+      213: -8507829071344279284
+    second: animals3_shadowless_2x_35
+  - first:
+      213: 6147215925455868143
+    second: animals3_shadowless_2x_36
+  - first:
+      213: 9166214706308764901
+    second: animals3_shadowless_2x_37
+  - first:
+      213: -6892468879617563578
+    second: animals3_shadowless_2x_38
+  - first:
+      213: -468040432230044461
+    second: animals3_shadowless_2x_39
+  - first:
+      213: 2772021464874590856
+    second: animals3_shadowless_2x_40
+  - first:
+      213: 2523709750174928911
+    second: animals3_shadowless_2x_41
+  - first:
+      213: 4719378422151090820
+    second: animals3_shadowless_2x_42
+  - first:
+      213: -5453873017790099899
+    second: animals3_shadowless_2x_43
+  - first:
+      213: -5535728182366415582
+    second: animals3_shadowless_2x_44
+  - first:
+      213: 437853968386600888
+    second: animals3_shadowless_2x_45
+  - first:
+      213: 4827633737138830753
+    second: animals3_shadowless_2x_46
+  - first:
+      213: -8220179609371189562
+    second: animals3_shadowless_2x_47
+  - first:
+      213: 7176364731705191824
+    second: animals3_shadowless_2x_48
+  - first:
+      213: -3759956437959634175
+    second: animals3_shadowless_2x_49
+  - first:
+      213: 5164138606437960782
+    second: animals3_shadowless_2x_50
+  - first:
+      213: 2706985169314493890
+    second: animals3_shadowless_2x_51
+  - first:
+      213: 6405649285861360365
+    second: animals3_shadowless_2x_52
+  - first:
+      213: 4043451167933804093
+    second: animals3_shadowless_2x_53
+  - first:
+      213: 5160874936559859040
+    second: animals3_shadowless_2x_54
+  - first:
+      213: 4434915436771408
+    second: animals3_shadowless_2x_55
+  - first:
+      213: 8585402673546853295
+    second: animals3_shadowless_2x_56
+  - first:
+      213: -6797910514507556922
+    second: animals3_shadowless_2x_57
+  - first:
+      213: 3555912744274878268
+    second: animals3_shadowless_2x_58
+  - first:
+      213: 8937098945096803159
+    second: animals3_shadowless_2x_59
+  - first:
+      213: -8221752799238519297
+    second: animals3_shadowless_2x_60
+  - first:
+      213: 2387722045066025288
+    second: animals3_shadowless_2x_61
+  - first:
+      213: -3781345462203008199
+    second: animals3_shadowless_2x_62
+  - first:
+      213: 1878242526425675239
+    second: animals3_shadowless_2x_63
+  - first:
+      213: -3888696521377818752
+    second: animals3_shadowless_2x_64
+  - first:
+      213: -6057505259943576751
+    second: animals3_shadowless_2x_65
+  - first:
+      213: 2275490861496798956
+    second: animals3_shadowless_2x_66
+  - first:
+      213: 8537383136737965166
+    second: animals3_shadowless_2x_67
+  - first:
+      213: -8911086174105648841
+    second: animals3_shadowless_2x_68
+  - first:
+      213: 694993404345041869
+    second: animals3_shadowless_2x_69
+  - first:
+      213: 6300488205319955099
+    second: animals3_shadowless_2x_70
+  - first:
+      213: 1529020745805927249
+    second: animals3_shadowless_2x_71
+  - first:
+      213: -4689181855654576032
+    second: animals3_shadowless_2x_72
+  - first:
+      213: 2678724369502089882
+    second: animals3_shadowless_2x_73
+  - first:
+      213: 3392551165056441024
+    second: animals3_shadowless_2x_74
+  - first:
+      213: 3282601861511229554
+    second: animals3_shadowless_2x_75
+  - first:
+      213: 1571901908799052440
+    second: animals3_shadowless_2x_76
+  - first:
+      213: -3747620288105041443
+    second: animals3_shadowless_2x_77
+  - first:
+      213: -3178897270914381152
+    second: animals3_shadowless_2x_78
+  - first:
+      213: -4717504036788294791
+    second: animals3_shadowless_2x_79
+  - first:
+      213: 1054638987739765183
+    second: animals3_shadowless_2x_80
+  - first:
+      213: 1985840918139288460
+    second: animals3_shadowless_2x_81
+  - first:
+      213: -3988125066437166553
+    second: animals3_shadowless_2x_82
+  - first:
+      213: 7732583085064512567
+    second: animals3_shadowless_2x_83
+  - first:
+      213: -3128702424243406293
+    second: animals3_shadowless_2x_84
+  - first:
+      213: 3093166767743742747
+    second: animals3_shadowless_2x_85
+  - first:
+      213: -1045155815260893519
+    second: animals3_shadowless_2x_86
+  - first:
+      213: -5271293023188859628
+    second: animals3_shadowless_2x_87
+  - first:
+      213: 3569927486553828119
+    second: animals3_shadowless_2x_88
+  - first:
+      213: -5328480665292841949
+    second: animals3_shadowless_2x_89
+  - first:
+      213: -5861576002009736423
+    second: animals3_shadowless_2x_90
+  - first:
+      213: 4041944839746117482
+    second: animals3_shadowless_2x_91
+  - first:
+      213: 1244891877089575474
+    second: animals3_shadowless_2x_92
+  - first:
+      213: -565158791470381649
+    second: animals3_shadowless_2x_93
+  - first:
+      213: -77278763020744829
+    second: animals3_shadowless_2x_94
+  - first:
+      213: 2884582365612136748
+    second: animals3_shadowless_2x_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 507
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994247bb8830bf330800000000000000
+      internalID: 3745591400884085913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 507
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37b070f4ea5c9960800000000000000
+      internalID: 7610057409682257725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_2
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 507
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9624ddf727b5a2090800000000000000
+      internalID: -8058528035896475031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_3
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 509
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9573943f69c718bd0800000000000000
+      internalID: -2629683719639058599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_4
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 509
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7448493954fcd9e0800000000000000
+      internalID: -1595131503945694081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 509
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3693e83f9efb46530800000000000000
+      internalID: 3847410993215715683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_6
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 507
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb02e73fc909c030800000000000000
+      internalID: 3515351769739824061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_7
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 507
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b394d05012e8440800000000000000
+      internalID: 4939922146853469073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_8
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 507
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f820efeb80f3d4d0800000000000000
+      internalID: -3110878433767315211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_9
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 509
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8a5329a9a3bc010800000000000000
+      internalID: 1210125360431474909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_10
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 509
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f894e4422f3d4f0800000000000000
+      internalID: -805033670622998637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_11
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 509
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c90253f245a7b5b0800000000000000
+      internalID: -5352627925137880637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 81
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc315ae71a179ea40800000000000000
+      internalID: 5397970566808671180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_13
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 435
+        width: 82
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9fbf9a2fc6a43460800000000000000
+      internalID: 7220579511285301149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 435
+        width: 82
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2f12323fbc481c0800000000000000
+      internalID: -4502249482336734488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_15
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 435
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 029fce89c18f65240800000000000000
+      internalID: 4780280856208800032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_16
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 435
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a8ee1ca819a90c0800000000000000
+      internalID: -4568178846868796797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_17
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 435
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31173f60d51951c20800000000000000
+      internalID: 3176604940914356499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_18
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 435
+        width: 82
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0e27ad63b040f80800000000000000
+      internalID: -8141369896157912882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_19
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 435
+        width: 82
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9019fe1c078dfdc0800000000000000
+      internalID: -3603575640697532261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_20
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 435
+        width: 82
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e6cca618d3a2900800000000000000
+      internalID: 660407921415056899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_21
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 435
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873023f8f6f3fd710800000000000000
+      internalID: 1720163331055158136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_22
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 435
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc713a0b3ead3f180800000000000000
+      internalID: -9082675352020248629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_23
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 435
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8fce0b628e8b420800000000000000
+      internalID: 2646120033954887847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 363
+        width: 82
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fc6998e9d172cf0800000000000000
+      internalID: -277220285309595835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_25
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 363
+        width: 82
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9aea3223edcba50800000000000000
+      internalID: 6538345065963497966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_26
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 363
+        width: 82
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f07e2934300181e0800000000000000
+      internalID: -2197474918882447111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_27
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 363
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae96c823340d7f270800000000000000
+      internalID: 8284319026600765930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_28
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 363
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd6b86c6a8064340800000000000000
+      internalID: 4847571561299537332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_29
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 363
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb59fc5eb0c914120800000000000000
+      internalID: 2396368051651974590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_30
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 363
+        width: 82
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0106b466a5b68b3a0800000000000000
+      internalID: -6649446813805092848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_31
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 363
+        width: 82
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857720b1038e37080800000000000000
+      internalID: -9190747121223829672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_32
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 363
+        width: 82
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e5f2334df6b41e0800000000000000
+      internalID: -2212551834739974584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_33
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 363
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4754a302ca780400800000000000000
+      internalID: 290617149668742989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_34
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 363
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c29720428ebc2a0800000000000000
+      internalID: -6716019177935000499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_35
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 363
+        width: 60
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0168c8398e1ee980800000000000000
+      internalID: -8507829071344279284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_36
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 291
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0db6a905c4f4550800000000000000
+      internalID: 6147215925455868143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_37
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 291
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4de70f5bfe43f70800000000000000
+      internalID: 9166214706308764901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_38
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 291
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644e5f462180950a0800000000000000
+      internalID: -6892468879617563578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_39
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 291
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc6868e4bf2189f0800000000000000
+      internalID: -468040432230044461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_40
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 293
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882ab93e5d2387620800000000000000
+      internalID: 2772021464874590856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_41
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 291
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00dd5785a4060320800000000000000
+      internalID: 2523709750174928911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_42
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 291
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48295fcaba99e7140800000000000000
+      internalID: 4719378422151090820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_43
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 291
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e888cd263ff44b0800000000000000
+      internalID: -5453873017790099899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_44
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 291
+        width: 36
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2255ee43c842d23b0800000000000000
+      internalID: -5535728182366415582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_45
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 291
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfad294dd1931600800000000000000
+      internalID: 437853968386600888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_46
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 293
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1adf9d75e433ff240800000000000000
+      internalID: 4827633737138830753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_47
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 291
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce5589923e0ced80800000000000000
+      internalID: -8220179609371189562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_48
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 219
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09dede393b1979360800000000000000
+      internalID: 7176364731705191824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_49
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 219
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10319707a83f1dbc0800000000000000
+      internalID: -3759956437959634175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_50
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 219
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c8d97a3b4baa740800000000000000
+      internalID: 5164138606437960782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_51
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 221
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5bd355ba4219520800000000000000
+      internalID: 2706985169314493890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_52
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 221
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2408f361075e850800000000000000
+      internalID: 6405649285861360365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_53
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 221
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e25530a693d1830800000000000000
+      internalID: 4043451167933804093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_54
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 219
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065fddb496c1f9740800000000000000
+      internalID: 5160874936559859040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_55
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 221
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058b7373881cf0000800000000000000
+      internalID: 4434915436771408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_56
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 219
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabf2728e3a752770800000000000000
+      internalID: 8585402673546853295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_57
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 219
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c752e76768f8a1a0800000000000000
+      internalID: -6797910514507556922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_58
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 221
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fd9c60dc3295130800000000000000
+      internalID: 3555912744274878268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_59
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 219
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7536309c324f60c70800000000000000
+      internalID: 8937098945096803159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_60
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 147
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5805ac36776ed80800000000000000
+      internalID: -8221752799238519297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_61
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 147
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849978e9c84e22120800000000000000
+      internalID: 2387722045066025288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_62
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 147
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bba582656f58bc0800000000000000
+      internalID: -3781345462203008199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_63
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 147
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e572ad50abd01a10800000000000000
+      internalID: 1878242526425675239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_64
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 149
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0875af3fd13980ac0800000000000000
+      internalID: -3888696521377818752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_65
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 147
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15bb0046f0b6feba0800000000000000
+      internalID: -6057505259943576751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_66
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 147
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee0a29e1ea249f10800000000000000
+      internalID: 2275490861496798956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_67
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 147
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e643da8dab0ea7670800000000000000
+      internalID: 8537383136737965166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_68
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 147
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731c98d6656755480800000000000000
+      internalID: -8911086174105648841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_69
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 147
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3c93ba1dc15a900800000000000000
+      internalID: 694993404345041869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_70
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 147
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9262ad24a4df6750800000000000000
+      internalID: 6300488205319955099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_71
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 147
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15317f7644c283510800000000000000
+      internalID: 1529020745805927249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_72
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 75
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060808652fdaceeb0800000000000000
+      internalID: -4689181855654576032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_73
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 75
+        width: 56
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92ba5f1f9dbc2520800000000000000
+      internalID: 2678724369502089882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_74
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 75
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cad6836f43c41f20800000000000000
+      internalID: 3392551165056441024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_75
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 75
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270b96640052e8d20800000000000000
+      internalID: 3282601861511229554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_76
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 77
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ad9bf257480d510800000000000000
+      internalID: 1571901908799052440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_77
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 75
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1b3762437cdfbc0800000000000000
+      internalID: -3747620288105041443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_78
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 75
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa80bd46c942e3d0800000000000000
+      internalID: -3178897270914381152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_79
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 75
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b23cca21f088eb0800000000000000
+      internalID: -4717504036788294791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_80
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 75
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb991865294d2ae00800000000000000
+      internalID: 1054638987739765183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_81
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 75
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8bb02a2bcf1f8b10800000000000000
+      internalID: 1985840918139288460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_82
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 75
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a7e2fc16557a8c0800000000000000
+      internalID: -3988125066437166553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_83
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 75
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734e67dc857af4b60800000000000000
+      internalID: 7732583085064512567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_84
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a7113c8bd9494d0800000000000000
+      internalID: -3128702424243406293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_85
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 3
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13b86679c22dea20800000000000000
+      internalID: 3093166767743742747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_86
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 3
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bec070d25cde71f0800000000000000
+      internalID: -1045155815260893519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_87
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 5
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41545d58cea98d6b0800000000000000
+      internalID: -5271293023188859628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_88
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 5
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ba1fd722eea8130800000000000000
+      internalID: 3569927486553828119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_89
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 5
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32cdea0011f6d06b0800000000000000
+      internalID: -5328480665292841949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_90
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 3
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b5140aeaf77aea0800000000000000
+      internalID: -5861576002009736423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_91
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 5
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f5ac6aa6fd71830800000000000000
+      internalID: 4041944839746117482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_92
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 3
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23281b5019eb64110800000000000000
+      internalID: 1244891877089575474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_93
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 3
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa508b0d2172828f0800000000000000
+      internalID: -565158791470381649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_94
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 5
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387877ddf537deef0800000000000000
+      internalID: -77278763020744829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animals3_shadowless_2x_95
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 3
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29daabd068180820800000000000000
+      internalID: 2884582365612136748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      animals3_shadowless_2x_0: 3745591400884085913
+      animals3_shadowless_2x_1: 7610057409682257725
+      animals3_shadowless_2x_10: -805033670622998637
+      animals3_shadowless_2x_11: -5352627925137880637
+      animals3_shadowless_2x_12: 5397970566808671180
+      animals3_shadowless_2x_13: 7220579511285301149
+      animals3_shadowless_2x_14: -4502249482336734488
+      animals3_shadowless_2x_15: 4780280856208800032
+      animals3_shadowless_2x_16: -4568178846868796797
+      animals3_shadowless_2x_17: 3176604940914356499
+      animals3_shadowless_2x_18: -8141369896157912882
+      animals3_shadowless_2x_19: -3603575640697532261
+      animals3_shadowless_2x_2: -8058528035896475031
+      animals3_shadowless_2x_20: 660407921415056899
+      animals3_shadowless_2x_21: 1720163331055158136
+      animals3_shadowless_2x_22: -9082675352020248629
+      animals3_shadowless_2x_23: 2646120033954887847
+      animals3_shadowless_2x_24: -277220285309595835
+      animals3_shadowless_2x_25: 6538345065963497966
+      animals3_shadowless_2x_26: -2197474918882447111
+      animals3_shadowless_2x_27: 8284319026600765930
+      animals3_shadowless_2x_28: 4847571561299537332
+      animals3_shadowless_2x_29: 2396368051651974590
+      animals3_shadowless_2x_3: -2629683719639058599
+      animals3_shadowless_2x_30: -6649446813805092848
+      animals3_shadowless_2x_31: -9190747121223829672
+      animals3_shadowless_2x_32: -2212551834739974584
+      animals3_shadowless_2x_33: 290617149668742989
+      animals3_shadowless_2x_34: -6716019177935000499
+      animals3_shadowless_2x_35: -8507829071344279284
+      animals3_shadowless_2x_36: 6147215925455868143
+      animals3_shadowless_2x_37: 9166214706308764901
+      animals3_shadowless_2x_38: -6892468879617563578
+      animals3_shadowless_2x_39: -468040432230044461
+      animals3_shadowless_2x_4: -1595131503945694081
+      animals3_shadowless_2x_40: 2772021464874590856
+      animals3_shadowless_2x_41: 2523709750174928911
+      animals3_shadowless_2x_42: 4719378422151090820
+      animals3_shadowless_2x_43: -5453873017790099899
+      animals3_shadowless_2x_44: -5535728182366415582
+      animals3_shadowless_2x_45: 437853968386600888
+      animals3_shadowless_2x_46: 4827633737138830753
+      animals3_shadowless_2x_47: -8220179609371189562
+      animals3_shadowless_2x_48: 7176364731705191824
+      animals3_shadowless_2x_49: -3759956437959634175
+      animals3_shadowless_2x_5: 3847410993215715683
+      animals3_shadowless_2x_50: 5164138606437960782
+      animals3_shadowless_2x_51: 2706985169314493890
+      animals3_shadowless_2x_52: 6405649285861360365
+      animals3_shadowless_2x_53: 4043451167933804093
+      animals3_shadowless_2x_54: 5160874936559859040
+      animals3_shadowless_2x_55: 4434915436771408
+      animals3_shadowless_2x_56: 8585402673546853295
+      animals3_shadowless_2x_57: -6797910514507556922
+      animals3_shadowless_2x_58: 3555912744274878268
+      animals3_shadowless_2x_59: 8937098945096803159
+      animals3_shadowless_2x_6: 3515351769739824061
+      animals3_shadowless_2x_60: -8221752799238519297
+      animals3_shadowless_2x_61: 2387722045066025288
+      animals3_shadowless_2x_62: -3781345462203008199
+      animals3_shadowless_2x_63: 1878242526425675239
+      animals3_shadowless_2x_64: -3888696521377818752
+      animals3_shadowless_2x_65: -6057505259943576751
+      animals3_shadowless_2x_66: 2275490861496798956
+      animals3_shadowless_2x_67: 8537383136737965166
+      animals3_shadowless_2x_68: -8911086174105648841
+      animals3_shadowless_2x_69: 694993404345041869
+      animals3_shadowless_2x_7: 4939922146853469073
+      animals3_shadowless_2x_70: 6300488205319955099
+      animals3_shadowless_2x_71: 1529020745805927249
+      animals3_shadowless_2x_72: -4689181855654576032
+      animals3_shadowless_2x_73: 2678724369502089882
+      animals3_shadowless_2x_74: 3392551165056441024
+      animals3_shadowless_2x_75: 3282601861511229554
+      animals3_shadowless_2x_76: 1571901908799052440
+      animals3_shadowless_2x_77: -3747620288105041443
+      animals3_shadowless_2x_78: -3178897270914381152
+      animals3_shadowless_2x_79: -4717504036788294791
+      animals3_shadowless_2x_8: -3110878433767315211
+      animals3_shadowless_2x_80: 1054638987739765183
+      animals3_shadowless_2x_81: 1985840918139288460
+      animals3_shadowless_2x_82: -3988125066437166553
+      animals3_shadowless_2x_83: 7732583085064512567
+      animals3_shadowless_2x_84: -3128702424243406293
+      animals3_shadowless_2x_85: 3093166767743742747
+      animals3_shadowless_2x_86: -1045155815260893519
+      animals3_shadowless_2x_87: -5271293023188859628
+      animals3_shadowless_2x_88: 3569927486553828119
+      animals3_shadowless_2x_89: -5328480665292841949
+      animals3_shadowless_2x_9: 1210125360431474909
+      animals3_shadowless_2x_90: -5861576002009736423
+      animals3_shadowless_2x_91: 4041944839746117482
+      animals3_shadowless_2x_92: 1244891877089575474
+      animals3_shadowless_2x_93: -565158791470381649
+      animals3_shadowless_2x_94: -77278763020744829
+      animals3_shadowless_2x_95: 2884582365612136748
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

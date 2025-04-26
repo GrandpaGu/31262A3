@@ -31,7 +31,7 @@ public class Level2SlimeController : MonoBehaviour
 
     [Header("Ground Check")]
     public Transform groundCheckPoint;
-    public float groundCheckRadius = 0.2f;
+    public float groundCheckRadius = 0.05f;
     public LayerMask groundLayer;
 
     [Header("Air Jump Settings")]
