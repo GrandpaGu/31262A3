@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class SlimeController : MonoBehaviour
 {
@@ -35,10 +36,10 @@ public class SlimeController : MonoBehaviour
     [Header("Animator")]
     public Animator animator;
 
-    /*────────── 滑停系数 (0.85-0.97 建议) ───────*/
-    [Header("Lock-Input Damping")]
+    /*────────── Lock-Input Damping ─────────────*/
+    [Header("Lock-Input Damping (0.85-0.97)")]
     [Range(0.5f, 0.99f)]
-    public float horizontalDamp = 0.9f;   // 0.9→较快停，0.97→更滑
+    public float horizontalDamp = 0.9f;   // 0.9→快停，0.97→滑得远
 
     /*────────── 私有字段 ───────────────────────*/
     int extraJumpsRemaining;
@@ -67,10 +68,19 @@ public class SlimeController : MonoBehaviour
         extraJumpsRemaining = maxExtraJumps;
     }
 
-    /*==================== Update ================*/
+    /*============= 首帧失重协程 (避免 WebGL 穿地) =============*/
+    IEnumerator Start()
+    {
+        float originalG = rb.gravityScale;
+        rb.gravityScale = 0f;              // 暂时失重
+        yield return new WaitForSeconds(3f); // 等 Tilemap Collider bake
+        rb.gravityScale = originalG;       // 恢复正常重力
+    }
+
+    /*==================== Update =================*/
     void Update()
     {
-        /* 若锁输入 → 不读键盘，但动画仍要更新 */
+        // 锁输入阶段：只更新动画，不读键盘
         if (GameManager.Instance != null && GameManager.Instance.isInputLocked)
         {
             UpdateAnimator();
@@ -95,7 +105,7 @@ public class SlimeController : MonoBehaviour
     /*================== FixedUpdate ==============*/
     void FixedUpdate()
     {
-        /* 锁输入：不读新输入，仅对水平速度做指数衰减 */
+        // 锁输入时：水平速度指数衰减，不再读取新输入
         if (GameManager.Instance != null && GameManager.Instance.isInputLocked)
         {
             rb.velocity = new Vector2(rb.velocity.x * horizontalDamp, rb.velocity.y);
@@ -118,8 +128,7 @@ public class SlimeController : MonoBehaviour
     /*==================== Input =================*/
     void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-            TryJump();
+        if (Input.GetKeyDown(KeyCode.Space)) TryJump();
 
         if (enableCrouch && circleCol)
         {
@@ -234,9 +243,6 @@ public class SlimeController : MonoBehaviour
         if (animator) animator.SetBool("IsJumping", !isGrounded);
     }
 
-    public void BeginNaturalStop()
-    {
-        // 如果以后想在抵达终点瞬间做额外处理，
-        // （例如播放特效、锁朝向、限制速度上限等），可在此添加逻辑。
-    }
+    /*=========== 接口：让 GameManager 调用 ===========*/
+    public void BeginNaturalStop() { /* 预留扩展 */ }
 }
