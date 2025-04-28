@@ -39,9 +39,9 @@ public class SlimeController : MonoBehaviour
     /*────────── Lock-Input Damping ─────────────*/
     [Header("Lock-Input Damping (0.85-0.97)")]
     [Range(0.5f, 0.99f)]
-    public float horizontalDamp = 0.9f;   // 0.9→快停，0.97→滑得远
+    public float horizontalDamp = 0.9f;
 
-    /*────────── 私有字段 ───────────────────────*/
+    /*────────── Private fields ────────────────*/
     int extraJumpsRemaining;
     bool isGrounded, groundHitThisFrame;
     bool isOnWall, isWallJumping;
@@ -68,19 +68,25 @@ public class SlimeController : MonoBehaviour
         extraJumpsRemaining = maxExtraJumps;
     }
 
-    /*============= 首帧失重协程 (避免 WebGL 穿地) =============*/
+    /*============= 首帧锁定 3 秒 ===============*/
     IEnumerator Start()
     {
-        float originalG = rb.gravityScale;
-        rb.gravityScale = 0f;              // 暂时失重
-        yield return new WaitForSeconds(3f); // 等 Tilemap Collider bake
-        rb.gravityScale = originalG;       // 恢复正常重力
+        // 记录游戏中应保持的约束（只锁旋转）
+        RigidbodyConstraints2D originalConstraints = RigidbodyConstraints2D.FreezeRotation;
+
+        // 1️⃣ 完全冻结位置与旋转
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
+
+        // 2️⃣ 等 3 秒（让 Tilemap Collider 完全生成）
+        yield return new WaitForSeconds(0f);
+
+        // 3️⃣ 恢复正常约束
+        rb.constraints = originalConstraints;
     }
 
-    /*==================== Update =================*/
+    /*==================== Update ================*/
     void Update()
     {
-        // 锁输入阶段：只更新动画，不读键盘
         if (GameManager.Instance != null && GameManager.Instance.isInputLocked)
         {
             UpdateAnimator();
@@ -105,7 +111,6 @@ public class SlimeController : MonoBehaviour
     /*================== FixedUpdate ==============*/
     void FixedUpdate()
     {
-        // 锁输入时：水平速度指数衰减，不再读取新输入
         if (GameManager.Instance != null && GameManager.Instance.isInputLocked)
         {
             rb.velocity = new Vector2(rb.velocity.x * horizontalDamp, rb.velocity.y);
@@ -243,6 +248,6 @@ public class SlimeController : MonoBehaviour
         if (animator) animator.SetBool("IsJumping", !isGrounded);
     }
 
-    /*=========== 接口：让 GameManager 调用 ===========*/
-    public void BeginNaturalStop() { /* 预留扩展 */ }
+    /*=========== 外部接口 (留空) ============*/
+    public void BeginNaturalStop() { }
 }
