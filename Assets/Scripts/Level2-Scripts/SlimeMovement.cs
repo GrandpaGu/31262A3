@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
 
 /*
- * SlimeController — v2.3
+ * SlimeController — v2.4
  * -------------------------------------------------
- * ● 可配置空中加跳 (maxExtraJumps)
- * ● 着陆双重检测：OverlapCircle + 接触法线
- * ● Swallow：Ctrl 触发，动画期间按朝向匀速位移
- *   位移 = swallowMoveSpeed × swallowDuration（可调）
+ * ● 在地面检测中同时识别 Ground + Platform 图层
  * -------------------------------------------------*/
 
 public class Level2SlimeController : MonoBehaviour
 {
+    /*────────────────── Movement ──────────────────*/
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
     public float climbSpeed = 3f;
@@ -19,6 +17,7 @@ public class Level2SlimeController : MonoBehaviour
     public float defaultGravityScale = 3f;
     public float jumpDisableCollisionTime = 0.05f;
 
+    /*────────────────── Crouch ────────────────────*/
     [Header("Crouch Settings")]
     public bool enableCrouch = true;
     public float normalColliderRadius = 0.5f;
@@ -26,37 +25,41 @@ public class Level2SlimeController : MonoBehaviour
     private Vector3 originalScale;
     private Vector3 crouchScale;
 
+    /*────────────────── Wall Stick ────────────────*/
     [Header("Wall Stick Settings")]
     public bool canStickToWall = false;
 
+    /*────────────────── Ground Check ──────────────*/
     [Header("Ground Check")]
     public Transform groundCheckPoint;
     public float groundCheckRadius = 0.05f;
-    public LayerMask groundLayer;
+    public LayerMask groundLayer;          // 原普通地面
+    public LayerMask platformLayer;        // 新增：一面可穿平台
 
+    /*────────────────── Air Jump ──────────────────*/
     [Header("Air Jump Settings")]
     public int maxExtraJumps = 1;
 
+    /*────────────────── Swallow ───────────────────*/
     [Header("Swallow Settings")]
-    public float swallowMoveSpeed = 2f;   // 位置变化速度 (m/s)
-    public float swallowDuration = 0.5f; // 动画持续时间 (s)
+    public float swallowMoveSpeed = 2f;
+    public float swallowDuration = 0.5f;
 
+    /*────────────────── Animator ──────────────────*/
     [Header("Animator")]
     public Animator animator;
 
-    // -------- Internal state --------
+    /*────────────────── Internal State ────────────*/
     private int extraJumpsRemaining;
     private bool isGrounded, groundHitThisFrame;
     private bool isOnWall, isWallJumping;
     private Vector2 wallNormal;
-
-    // Swallow flags
     private bool isSwallowing = false;
     private float swallowTimer = 0f;
-    private float swallowDirection = 1f;     // +1 右, -1 左
-    private float swallowOffsetX = 0f;     // 待叠加的位移
+    private float swallowDirection = 1f;
+    private float swallowOffsetX = 0f;
 
-    // Cached
+    /*────────────────── Cached ────────────────────*/
     private Rigidbody2D rb;
     private CircleCollider2D circleCol;
 
@@ -84,8 +87,8 @@ public class Level2SlimeController : MonoBehaviour
     {
         groundHitThisFrame = false;
         GroundCheckOverlap();
-        if (isGrounded) extraJumpsRemaining = maxExtraJumps;
 
+        if (isGrounded) extraJumpsRemaining = maxExtraJumps;
         HandleInput();
 
         if (!canStickToWall && isOnWall)
@@ -99,11 +102,11 @@ public class Level2SlimeController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // --- Swallow 平移 ---
+        // Swallow 位移
         if (isSwallowing)
         {
             float step = swallowDirection * swallowMoveSpeed * Time.fixedDeltaTime;
-            swallowOffsetX += step;        // 累积待叠加位移
+            swallowOffsetX += step;
             swallowTimer -= Time.fixedDeltaTime;
             if (swallowTimer <= 0f) isSwallowing = false;
         }
@@ -117,7 +120,7 @@ public class Level2SlimeController : MonoBehaviour
         else
         {
             rb.gravityScale = defaultGravityScale;
-            MoveHorizontal();              // 在此叠加 swallowOffsetX
+            MoveHorizontal();
         }
     }
     #endregion
@@ -128,18 +131,17 @@ public class Level2SlimeController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) TryJump();
 
-        // --- 触发吞噬 ---
+        // Swallow
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
         {
             animator.SetTrigger("Swallow");
-
             isSwallowing = true;
             swallowTimer = swallowDuration;
             swallowDirection = transform.localScale.x > 0 ? 1f : -1f;
-            swallowOffsetX = 0f;                          // 清空位移累积
+            swallowOffsetX = 0f;
         }
 
-        // --- Crouch ---
+        // Crouch
         if (enableCrouch && circleCol)
         {
             bool crouchKey = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
@@ -155,15 +157,15 @@ public class Level2SlimeController : MonoBehaviour
         float baseVelX = h * moveSpeed;
 
         // 叠加吞噬位移
-        baseVelX += swallowOffsetX / Time.fixedDeltaTime; // 转化为速度
-        swallowOffsetX = 0f;                              // 本帧清零
+        baseVelX += swallowOffsetX / Time.fixedDeltaTime;
+        swallowOffsetX = 0f;
 
         rb.velocity = new Vector2(baseVelX, rb.velocity.y);
 
         if (animator) animator.SetFloat("Speed", Mathf.Abs(h));
 
-        if (h < 0) transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
-        else if (h > 0) transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+        if (h < 0) transform.localScale = new Vector3(-originalScale.x, transform.localScale.y, originalScale.z);
+        else if (h > 0) transform.localScale = new Vector3(originalScale.x, transform.localScale.y, originalScale.z);
     }
 
     void MoveVertical()
@@ -211,13 +213,16 @@ public class Level2SlimeController : MonoBehaviour
     #region Ground / Wall Checks
     void GroundCheckOverlap()
     {
+        // Ground + Platform 合并
+        LayerMask combinedMask = groundLayer | platformLayer;
+
         if (groundCheckPoint)
-            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, groundLayer);
+            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, combinedMask);
         else
         {
             Vector2 origin = transform.position;
             origin.y -= (circleCol ? circleCol.radius : 0.5f) + 0.05f;
-            isGrounded = Physics2D.OverlapCircle(origin, groundCheckRadius, groundLayer);
+            isGrounded = Physics2D.OverlapCircle(origin, groundCheckRadius, combinedMask);
         }
     }
 
@@ -235,7 +240,8 @@ public class Level2SlimeController : MonoBehaviour
             if (Vector2.Dot(n, Vector2.up) > 0.5f) groundHitThisFrame = true;
 
             if (!isWallJumping && canStickToWall &&
-                (Mathf.Abs(Vector2.Dot(n, Vector2.left)) > 0.5f || Mathf.Abs(Vector2.Dot(n, Vector2.right)) > 0.5f))
+                (Mathf.Abs(Vector2.Dot(n, Vector2.left)) > 0.5f ||
+                 Mathf.Abs(Vector2.Dot(n, Vector2.right)) > 0.5f))
             {
                 isOnWall = true;
                 wallNormal = n.normalized;
