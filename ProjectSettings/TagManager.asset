@@ -5,14 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Mushroom
+  - Bat
+  - Finish line
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - background
   - 
   - 
   - 
