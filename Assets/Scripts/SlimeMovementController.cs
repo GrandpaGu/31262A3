@@ -3,6 +3,20 @@ using UnityEngine;
 
 public class SlimeController : MonoBehaviour
 {
+    public float dashSpeed = 20f;
+    public float dashDuration = 0.2f;
+    public float dashCooldown = 1f;
+
+    private bool isDashing = false;
+    private float dashTimer;
+    private float lastDashTime = -999f;
+
+    private Vector2 originalVelocity;
+
+
+
+
+
     /*──────────── Movement Settings ────────────*/
     [Header("Movement")]
     public float moveSpeed = 5f;
@@ -71,6 +85,7 @@ public class SlimeController : MonoBehaviour
     /*============= 首帧锁定 3 秒 ===============*/
     IEnumerator Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         // 记录游戏中应保持的约束（只锁旋转）
         RigidbodyConstraints2D originalConstraints = RigidbodyConstraints2D.FreezeRotation;
 
@@ -87,6 +102,13 @@ public class SlimeController : MonoBehaviour
     /*==================== Update ================*/
     void Update()
     {
+        if (!isDashing && Time.time >= lastDashTime + dashCooldown && !isDashing)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                StartDash();
+            }
+        }
         if (GameManager.Instance != null && GameManager.Instance.isInputLocked)
         {
             UpdateAnimator();
@@ -111,6 +133,16 @@ public class SlimeController : MonoBehaviour
     /*================== FixedUpdate ==============*/
     void FixedUpdate()
     {
+        if (isDashing)
+        {
+            rb.velocity = new Vector2(transform.localScale.x * dashSpeed, 0f);
+            dashTimer -= Time.fixedDeltaTime;
+            if (dashTimer <= 0f)
+            {
+                EndDash();
+            }
+            return;
+        }
         if (GameManager.Instance != null && GameManager.Instance.isInputLocked)
         {
             rb.velocity = new Vector2(rb.velocity.x * horizontalDamp, rb.velocity.y);
@@ -137,7 +169,7 @@ public class SlimeController : MonoBehaviour
 
         if (enableCrouch && circleCol)
         {
-            bool crouchKey = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+            bool crouchKey = Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightShift);
             circleCol.radius = crouchKey ? crouchColliderRadius : normalColliderRadius;
             float scaleY = crouchKey ? crouchScale.y : originalScale.y;
             transform.localScale = new Vector3(transform.localScale.x, scaleY, transform.localScale.z);
@@ -250,4 +282,30 @@ public class SlimeController : MonoBehaviour
 
     /*=========== 外部接口 (留空) ============*/
     public void BeginNaturalStop() { }
+
+
+    
+
+    void StartDash()
+    {
+        isDashing = true;
+        dashTimer = dashDuration;
+        lastDashTime = Time.time;
+        rb.gravityScale = 0f;
+    }
+
+    void EndDash()
+    {
+        isDashing = false;
+        rb.gravityScale = 3f;
+        rb.velocity = Vector2.zero;
+    }
+
+
+
+
+
+
 }
+
+
