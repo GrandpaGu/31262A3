@@ -187,4 +187,7 @@ public class SlimeSwallow : MonoBehaviour
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(swallowCenter.position, swallowRadius);
     }
+
+    public int GetCurrentIndex() => currentIndex;
+    public List<Ability> GetAbilities() => slots;
 }
