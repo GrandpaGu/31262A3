@@ -575,6 +575,96 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -34, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -33, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -32, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -31, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -25, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -24, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -23, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -22, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -21, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 17
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 0
@@ -627,8 +717,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 9
+    m_Data: {fileID: 11400000, guid: 438d34a4712ee2b40bbb7dc55cf50e4a, type: 2}
   - m_RefCount: 25
     m_Data: {fileID: 11400000, guid: 0c1b6ec521080c6489b642c0c53ebd92, type: 2}
   m_TileSpriteArray:
@@ -682,8 +772,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 9
+    m_Data: {fileID: -1328073575, guid: 199b1f680db748544970a0634a15c0fe, type: 3}
   - m_RefCount: 25
     m_Data: {fileID: 2097702617349663825, guid: 199b1f680db748544970a0634a15c0fe, type: 3}
   m_TileMatrixArray:
@@ -741,7 +831,7 @@ Tilemap:
       e31: 5.8e-43
       e32: 5.82e-43
       e33: 5.82e-43
-  - m_RefCount: 25
+  - m_RefCount: 34
     m_Data:
       e00: 1
       e01: 0
@@ -794,7 +884,7 @@ Tilemap:
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
-  - m_RefCount: 25
+  - m_RefCount: 34
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -873,6 +963,214 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1663514289}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: hookPrefab
+      value: 
+      objectReference: {fileID: 4278096599711677539, guid: 19051d26efe985e4b96ac55fb8450f0e, type: 3}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleLine
+      value: 
+      objectReference: {fileID: 1870274645}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: ropeRenderer
+      value: 
+      objectReference: {fileID: 1870274645}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: crosshairPrefab
+      value: 
+      objectReference: {fileID: 8184613327366889836, guid: d08cfe6ae70dbd54fb1dec182ed79c71, type: 3}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: groundCheckPoint
+      value: 
+      objectReference: {fileID: 1476840594}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleSwingForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleMaxDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootDuration
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grapplingLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[1].time
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[3].time
+      value: 0.585171
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[4].time
+      value: 0.7949771
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[5].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[1].value
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[2].value
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[3].value
+      value: 0.06376181
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[4].value
+      value: -0.02383388
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[0].inSlope
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[1].inSlope
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[2].inSlope
+      value: 0.8000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[3].inSlope
+      value: -0.112984635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[4].inSlope
+      value: -0.15062894
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[5].inSlope
+      value: 0.11624986
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[0].outSlope
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[1].outSlope
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[2].outSlope
+      value: 0.8000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[3].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[3].outSlope
+      value: -0.112984635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[4].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[4].outSlope
+      value: -0.15062894
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[5].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[5].outSlope
+      value: 0.11624986
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[2].outWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[3].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[4].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[0].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[1].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[2].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[3].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[4].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6673787737813310910, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: grappleShootAnimationCurve.m_Curve.Array.data[5].tangentMode
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340936264090431635, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8292997110516927343, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
       propertyPath: m_Name
       value: Slime
@@ -883,7 +1181,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3014412045069512860, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1870274644}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
 --- !u!1 &1203403442
@@ -934,6 +1235,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxCamera: {fileID: 2112838427}
+--- !u!4 &1476840594 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8883799573730515711, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+  m_PrefabInstance: {fileID: 462345372}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1555348147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1340,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxFactor: 0.3
+--- !u!95 &1663514289 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3832864553185538418, guid: e7aa830691060274f9bfcd5eed4defbf, type: 3}
+  m_PrefabInstance: {fileID: 462345372}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1768597865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1390,144 @@ Transform:
   - {fileID: 78494445}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1870274643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1870274644}
+  - component: {fileID: 1870274645}
+  m_Layer: 0
+  m_Name: RopeRenderer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1870274644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870274643}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 157858171}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &1870274645
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870274643}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.11999869
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 0.454902, g: 0.73333335, b: 0.8196079, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 31611
+      ctime2: 31611
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: 0
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
 --- !u!1 &1971578657
 GameObject:
   m_ObjectHideFlags: 0

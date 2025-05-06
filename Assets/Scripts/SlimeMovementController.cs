@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿﻿using System.Collections;
 using UnityEngine;
 
 public class SlimeController : MonoBehaviour
@@ -36,16 +36,38 @@ public class SlimeController : MonoBehaviour
     [Header("Animator")]
     public Animator animator;
 
-    /*────────── Lock-Input Damping ─────────────*/
+    /*────────── Lock-Input Damping (0.85-0.97) ─────────────*/
     [Header("Lock-Input Damping (0.85-0.97)")]
     [Range(0.5f, 0.99f)]
     public float horizontalDamp = 0.9f;
+
+    /*──────────── Grapple Settings ─────────────*/
+    [Header("Grapple")]
+    public LayerMask grappleLayer; // Set to "Ground" layer in Inspector
+    public LineRenderer grappleLine;
+    public float grappleMaxDistance = 10f;
+    public float grappleSwingForce = 15f;
+
+    // Crosshair Prefab to show at max grapple distance
+    public GameObject crosshairPrefab; // Assign in the Inspector
+    private GameObject crosshairInstance;
+
+    // Grapple shoot animation curve
+    [Header("Grapple Animation")]
+    public AnimationCurve grappleShootAnimationCurve;  // Assign curve in the inspector
+    public float grappleShootDuration = 0.5f;          // Time to shoot the grapple hook
+
+    private bool isGrappling = false;
+    private Vector2 grapplePoint;
+    private DistanceJoint2D grappleJoint;
 
     /*────────── Private fields ────────────────*/
     int extraJumpsRemaining;
     bool isGrounded, groundHitThisFrame;
     bool isOnWall, isWallJumping;
     Vector2 wallNormal;
+
+    private bool isAirborneAfterGrapple = false;
 
     Rigidbody2D rb;
     CircleCollider2D circleCol;
@@ -66,21 +88,19 @@ public class SlimeController : MonoBehaviour
 
         if (!animator) animator = GetComponent<Animator>();
         extraJumpsRemaining = maxExtraJumps;
+
+        grappleJoint = gameObject.AddComponent<DistanceJoint2D>();
+        grappleJoint.enabled = false;
+        grappleJoint.autoConfigureDistance = false;
+        grappleJoint.autoConfigureConnectedAnchor = false;
+        grappleJoint.enableCollision = true;
     }
 
-    /*============= 首帧锁定 3 秒 ===============*/
     IEnumerator Start()
     {
-        // 记录游戏中应保持的约束（只锁旋转）
         RigidbodyConstraints2D originalConstraints = RigidbodyConstraints2D.FreezeRotation;
-
-        // 1️⃣ 完全冻结位置与旋转
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
-
-        // 2️⃣ 等 3 秒（让 Tilemap Collider 完全生成）
         yield return new WaitForSeconds(0f);
-
-        // 3️⃣ 恢复正常约束
         rb.constraints = originalConstraints;
     }
 
@@ -106,6 +126,18 @@ public class SlimeController : MonoBehaviour
         }
 
         UpdateAnimator();
+
+        if (isGrappling && grappleLine)
+        {
+            grappleLine.SetPosition(0, transform.position);
+            grappleLine.SetPosition(1, grapplePoint);
+        }
+
+        // Display the crosshair at the maximum grapple distance
+        if (crosshairPrefab != null)
+        {
+            UpdateCrosshair();
+        }
     }
 
     /*================== FixedUpdate ==============*/
@@ -117,16 +149,40 @@ public class SlimeController : MonoBehaviour
             return;
         }
 
-        if (isOnWall && canStickToWall)
+        // If not grappling, we can use normal movement
+        if (isGrappling)
         {
-            rb.gravityScale = 0f;
-            StickToWall();
-            MoveVertical();
+            // Direction from player to anchor
+            Vector2 toAnchor = grapplePoint - rb.position;
+            Vector2 tangent = Vector2.Perpendicular(toAnchor).normalized;
+            if (Vector2.Dot(tangent, Vector2.right) < 0) tangent = -tangent;
+            float input = Input.GetAxisRaw("Horizontal");
+            rb.AddForce(tangent * input * grappleSwingForce);
+        }
+        else if (isAirborneAfterGrapple)
+        {
+            // Continue to apply swing-like behavior if airborne after detachment
+            // Use momentum from before detachment, allowing them to "swing" in the air
+            Vector2 momentum = rb.velocity;
+            rb.velocity = new Vector2(momentum.x, rb.velocity.y);
+
+            // Keep the player in the air with swing momentum until they hit the ground
+            if (isGrounded) // when the player lands
+            {
+                isAirborneAfterGrapple = false;
+            }
         }
         else
         {
             rb.gravityScale = defaultGravityScale;
             MoveHorizontal();
+        }
+
+        if (isOnWall && canStickToWall)
+        {
+            rb.gravityScale = 0f;
+            StickToWall();
+            MoveVertical();
         }
     }
 
@@ -142,6 +198,9 @@ public class SlimeController : MonoBehaviour
             float scaleY = crouchKey ? crouchScale.y : originalScale.y;
             transform.localScale = new Vector3(transform.localScale.x, scaleY, transform.localScale.z);
         }
+
+        if (Input.GetMouseButtonDown(0) && !isGrappling) TryGrapple();
+        if (Input.GetMouseButtonDown(1) && isGrappling) CancelGrapple();
     }
 
     /*================ Horizontal Move ============*/
@@ -248,6 +307,109 @@ public class SlimeController : MonoBehaviour
         if (animator) animator.SetBool("IsJumping", !isGrounded);
     }
 
+    /*================ Grapple Methods =================*/
+    void TryGrapple()
+    {
+        Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mouseWorldPos - (Vector2)transform.position).normalized;
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, grappleMaxDistance, grappleLayer);
+
+        if (hit.collider != null)
+        {
+            isGrappling = true;
+            grapplePoint = hit.point;
+
+            grappleJoint.enabled = true;
+            grappleJoint.connectedAnchor = grapplePoint;
+            grappleJoint.distance = Vector2.Distance(transform.position, grapplePoint);
+
+            if (grappleLine)
+            {
+                grappleLine.enabled = true;
+                grappleLine.positionCount = 2;
+                StartCoroutine(AnimateGrappleShoot());  // Start the animation when the grapple is shot
+            }
+        }
+    }
+
+    void CancelGrapple()
+    {
+        if (isGrappling)
+        {
+            // Capture current velocity (important: capture horizontal swing momentum)
+            Vector2 momentum = rb.velocity;
+
+            // Disable the grapple
+            isGrappling = false;
+            grappleJoint.enabled = false;
+            if (grappleLine) grappleLine.enabled = false;
+
+            // Preserve horizontal momentum, and apply vertical motion naturally
+            rb.velocity = new Vector2(momentum.x, rb.velocity.y);
+
+            // Set a flag indicating the player is airborne after detachment
+            isAirborneAfterGrapple = true;
+
+            // Destroy the crosshair
+            if (crosshairInstance != null)
+            {
+                Destroy(crosshairInstance);
+            }
+        }
+    }
+
     /*=========== 外部接口 (留空) ============*/
     public void BeginNaturalStop() { }
+
+    // Update the crosshair position
+    void UpdateCrosshair()
+    {
+        Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mouseWorldPos - (Vector2)transform.position).normalized;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, grappleMaxDistance, grappleLayer);
+
+        Vector2 crosshairPos = transform.position + (Vector3)(direction * grappleMaxDistance);
+
+        // If there's a valid grapple point, use that position, otherwise, stick to max distance
+        if (hit.collider != null)
+        {
+            crosshairPos = hit.point;
+        }
+
+        if (crosshairInstance == null)
+        {
+            crosshairInstance = Instantiate(crosshairPrefab, crosshairPos, Quaternion.identity);
+        }
+        else
+        {
+            crosshairInstance.transform.position = crosshairPos;
+        }
+    }
+
+    // Grapple line shoot animation using AnimationCurve
+    private IEnumerator AnimateGrappleShoot()
+    {
+        float timeElapsed = 0f;
+
+        // While the grapple shoot animation is ongoing, extend the line
+        while (timeElapsed < grappleShootDuration)
+        {
+            timeElapsed += Time.deltaTime;
+
+            // Calculate the animation curve value (normalized between 0 and 1)
+            float curveValue = grappleShootAnimationCurve.Evaluate(timeElapsed / grappleShootDuration);
+
+            // Use the curve to extend the grapple line
+            Vector2 extendedGrapplePoint = Vector2.Lerp(transform.position, grapplePoint, curveValue);
+
+            // Update the grapple line
+            grappleLine.SetPosition(1, extendedGrapplePoint);
+
+            yield return null;
+        }
+
+        // Once the animation is complete, finalize the grapple line position at the target
+        grappleLine.SetPosition(1, grapplePoint);
+    }
 }
