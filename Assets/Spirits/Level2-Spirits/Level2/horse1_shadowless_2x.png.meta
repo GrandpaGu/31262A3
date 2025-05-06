@@ -1,0 +1,2527 @@
+fileFormatVersion: 2
+guid: c1e6633dcc7dc8c43b091bd7e7d1aa07
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3171259468008562050
+    second: horse1_shadowless_2x_0
+  - first:
+      213: 2388666558801315128
+    second: horse1_shadowless_2x_1
+  - first:
+      213: -6368064040081132243
+    second: horse1_shadowless_2x_2
+  - first:
+      213: -9010498296749761977
+    second: horse1_shadowless_2x_3
+  - first:
+      213: -6123698854330049266
+    second: horse1_shadowless_2x_4
+  - first:
+      213: 4113702910554200875
+    second: horse1_shadowless_2x_5
+  - first:
+      213: -260070215286857561
+    second: horse1_shadowless_2x_6
+  - first:
+      213: -5241032553292804209
+    second: horse1_shadowless_2x_7
+  - first:
+      213: 648270119222249033
+    second: horse1_shadowless_2x_8
+  - first:
+      213: 7576001369364911641
+    second: horse1_shadowless_2x_9
+  - first:
+      213: -5856754992358013645
+    second: horse1_shadowless_2x_10
+  - first:
+      213: 4976838987703884232
+    second: horse1_shadowless_2x_11
+  - first:
+      213: 1246705748055244413
+    second: horse1_shadowless_2x_12
+  - first:
+      213: -5164385523754992176
+    second: horse1_shadowless_2x_13
+  - first:
+      213: -747970147168062566
+    second: horse1_shadowless_2x_14
+  - first:
+      213: 61569685461660482
+    second: horse1_shadowless_2x_15
+  - first:
+      213: -8806814126031698186
+    second: horse1_shadowless_2x_16
+  - first:
+      213: 3910108349959741804
+    second: horse1_shadowless_2x_17
+  - first:
+      213: -7102181266988848702
+    second: horse1_shadowless_2x_18
+  - first:
+      213: -3337879082142172974
+    second: horse1_shadowless_2x_19
+  - first:
+      213: 6054368749427664910
+    second: horse1_shadowless_2x_20
+  - first:
+      213: 8302017841496542891
+    second: horse1_shadowless_2x_21
+  - first:
+      213: 2622706474854368439
+    second: horse1_shadowless_2x_22
+  - first:
+      213: -1453793600420832769
+    second: horse1_shadowless_2x_23
+  - first:
+      213: 8595785903060833081
+    second: horse1_shadowless_2x_24
+  - first:
+      213: -5369009822744835891
+    second: horse1_shadowless_2x_25
+  - first:
+      213: -4353201292268161038
+    second: horse1_shadowless_2x_26
+  - first:
+      213: -2636137587615453117
+    second: horse1_shadowless_2x_27
+  - first:
+      213: 8969129877188859042
+    second: horse1_shadowless_2x_28
+  - first:
+      213: -5345624461215545893
+    second: horse1_shadowless_2x_29
+  - first:
+      213: -5695380837553953168
+    second: horse1_shadowless_2x_30
+  - first:
+      213: 4039116805778838057
+    second: horse1_shadowless_2x_31
+  - first:
+      213: 4150175098259377418
+    second: horse1_shadowless_2x_32
+  - first:
+      213: -4072261545640983772
+    second: horse1_shadowless_2x_33
+  - first:
+      213: -3641324709425344130
+    second: horse1_shadowless_2x_34
+  - first:
+      213: -4810174908048883942
+    second: horse1_shadowless_2x_35
+  - first:
+      213: 3593255816565960816
+    second: horse1_shadowless_2x_36
+  - first:
+      213: 4928000767491886059
+    second: horse1_shadowless_2x_37
+  - first:
+      213: -3454919229141171513
+    second: horse1_shadowless_2x_38
+  - first:
+      213: -2600741629051327794
+    second: horse1_shadowless_2x_39
+  - first:
+      213: -236631539284269646
+    second: horse1_shadowless_2x_40
+  - first:
+      213: 6289430398762600236
+    second: horse1_shadowless_2x_41
+  - first:
+      213: -2588071877281703927
+    second: horse1_shadowless_2x_42
+  - first:
+      213: 653671498639206923
+    second: horse1_shadowless_2x_43
+  - first:
+      213: -2391901935065923517
+    second: horse1_shadowless_2x_44
+  - first:
+      213: -2021263752252213961
+    second: horse1_shadowless_2x_45
+  - first:
+      213: 6258228423209604687
+    second: horse1_shadowless_2x_46
+  - first:
+      213: 4402889355554185429
+    second: horse1_shadowless_2x_47
+  - first:
+      213: -6288684861936081239
+    second: horse1_shadowless_2x_48
+  - first:
+      213: 1136308100205497066
+    second: horse1_shadowless_2x_49
+  - first:
+      213: -3896793096217557034
+    second: horse1_shadowless_2x_50
+  - first:
+      213: -2018636712065418910
+    second: horse1_shadowless_2x_51
+  - first:
+      213: 4262741500327122802
+    second: horse1_shadowless_2x_52
+  - first:
+      213: 6635131827503403254
+    second: horse1_shadowless_2x_53
+  - first:
+      213: -404845473091873934
+    second: horse1_shadowless_2x_54
+  - first:
+      213: -4391891343822957288
+    second: horse1_shadowless_2x_55
+  - first:
+      213: 7198186361321353632
+    second: horse1_shadowless_2x_56
+  - first:
+      213: -8577567901197626552
+    second: horse1_shadowless_2x_57
+  - first:
+      213: 1905685688097829415
+    second: horse1_shadowless_2x_58
+  - first:
+      213: -8764006379697473000
+    second: horse1_shadowless_2x_59
+  - first:
+      213: 4668412809590326507
+    second: horse1_shadowless_2x_60
+  - first:
+      213: 6455924672201120930
+    second: horse1_shadowless_2x_61
+  - first:
+      213: -1996206519563733611
+    second: horse1_shadowless_2x_62
+  - first:
+      213: 3968869857457518756
+    second: horse1_shadowless_2x_63
+  - first:
+      213: -6428865977697451907
+    second: horse1_shadowless_2x_64
+  - first:
+      213: 5471409501683289563
+    second: horse1_shadowless_2x_65
+  - first:
+      213: 1530946164623721191
+    second: horse1_shadowless_2x_66
+  - first:
+      213: 7407462723226866570
+    second: horse1_shadowless_2x_67
+  - first:
+      213: 1560093948905559890
+    second: horse1_shadowless_2x_68
+  - first:
+      213: 4427432668946810356
+    second: horse1_shadowless_2x_69
+  - first:
+      213: -3409383276162041304
+    second: horse1_shadowless_2x_70
+  - first:
+      213: 5040353676117204568
+    second: horse1_shadowless_2x_71
+  - first:
+      213: -1641322233636985857
+    second: horse1_shadowless_2x_72
+  - first:
+      213: 6833530477833158983
+    second: horse1_shadowless_2x_73
+  - first:
+      213: 4460967217670509557
+    second: horse1_shadowless_2x_74
+  - first:
+      213: -5602907732074443018
+    second: horse1_shadowless_2x_75
+  - first:
+      213: -3907633522388993483
+    second: horse1_shadowless_2x_76
+  - first:
+      213: 7148550293181573350
+    second: horse1_shadowless_2x_77
+  - first:
+      213: 3225228755040634692
+    second: horse1_shadowless_2x_78
+  - first:
+      213: 675447409896165697
+    second: horse1_shadowless_2x_79
+  - first:
+      213: 4850884683339095885
+    second: horse1_shadowless_2x_80
+  - first:
+      213: -8967710529089319029
+    second: horse1_shadowless_2x_81
+  - first:
+      213: -8394545310866493752
+    second: horse1_shadowless_2x_82
+  - first:
+      213: 3647905938282015091
+    second: horse1_shadowless_2x_83
+  - first:
+      213: 5325580018930522003
+    second: horse1_shadowless_2x_84
+  - first:
+      213: -8792899344573372955
+    second: horse1_shadowless_2x_85
+  - first:
+      213: -7479410874152069471
+    second: horse1_shadowless_2x_86
+  - first:
+      213: -5287820106070928687
+    second: horse1_shadowless_2x_87
+  - first:
+      213: -6543544872247023682
+    second: horse1_shadowless_2x_88
+  - first:
+      213: -1508474348611453642
+    second: horse1_shadowless_2x_89
+  - first:
+      213: 9009550758531324101
+    second: horse1_shadowless_2x_90
+  - first:
+      213: 4700163571125148375
+    second: horse1_shadowless_2x_91
+  - first:
+      213: 2568826703355600113
+    second: horse1_shadowless_2x_92
+  - first:
+      213: 7209600568003498461
+    second: horse1_shadowless_2x_93
+  - first:
+      213: -7696845680126561807
+    second: horse1_shadowless_2x_94
+  - first:
+      213: -3611631919466522041
+    second: horse1_shadowless_2x_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d9e312fa3920c20800000000000000
+      internalID: 3171259468008562050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 899
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835053c549f362120800000000000000
+      internalID: 2388666558801315128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d257608be7710a7a0800000000000000
+      internalID: -6368064040081132243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ad7fce98744f280800000000000000
+      internalID: -9010498296749761977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_4
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 899
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dd0343650440ba0800000000000000
+      internalID: -6123698854330049266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_5
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bd217700fc61930800000000000000
+      internalID: 4113702910554200875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_6
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0ea21648b046cf0800000000000000
+      internalID: -260070215286857561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_7
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 899
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f49b439ac1447b0800000000000000
+      internalID: -5241032553292804209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_8
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9460ebe1d3e1ff800800000000000000
+      internalID: 648270119222249033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_9
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9165ed62b1d532960800000000000000
+      internalID: 7576001369364911641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_10
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 899
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33541086d50a8bea0800000000000000
+      internalID: -5856754992358013645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_11
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 903
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9976ed0b8411540800000000000000
+      internalID: 4976838987703884232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 771
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e3544c5403d4110800000000000000
+      internalID: 1246705748055244413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 771
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddf96d6aba6458b0800000000000000
+      internalID: -5164385523754992176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_14
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 771
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9373733d1dae95f0800000000000000
+      internalID: -747970147168062566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_15
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 771
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243ffde7d4dbad000800000000000000
+      internalID: 61569685461660482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_16
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 771
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f60dfe7639e7c580800000000000000
+      internalID: -8806814126031698186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_17
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 771
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61a3a0e3de734630800000000000000
+      internalID: 3910108349959741804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_18
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 771
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c922b244cbff6d90800000000000000
+      internalID: -7102181266988848702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_19
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 771
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d875bdd8a87da1d0800000000000000
+      internalID: -3337879082142172974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_20
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 771
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e08acd8dc40750450800000000000000
+      internalID: 6054368749427664910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_21
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 771
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae4b59ad31b63370800000000000000
+      internalID: 8302017841496542891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_22
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 771
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4cfc7a4a9b56420800000000000000
+      internalID: 2622706474854368439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_23
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 771
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff91e264c6613dbe0800000000000000
+      internalID: -1453793600420832769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 643
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93350458cbd5a4770800000000000000
+      internalID: 8595785903060833081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_25
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 643
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc806bf23027d75b0800000000000000
+      internalID: -5369009822744835891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_26
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 643
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7b59a2d725693c0800000000000000
+      internalID: -4353201292268161038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_27
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 643
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3403027b4de8a6bd0800000000000000
+      internalID: -2636137587615453117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_28
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 643
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a45f225a10c87c70800000000000000
+      internalID: 8969129877188859042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_29
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 643
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5cb96ffd680d5b0800000000000000
+      internalID: -5345624461215545893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_30
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 643
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076a70dbd41f5f0b0800000000000000
+      internalID: -5695380837553953168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_31
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 643
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92212cea553dd0830800000000000000
+      internalID: 4039116805778838057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_32
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 643
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d0c676342689930800000000000000
+      internalID: 4150175098259377418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_33
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 643
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423069333bb6c77c0800000000000000
+      internalID: -4072261545640983772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_34
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 643
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7199d6287a677dc0800000000000000
+      internalID: -3641324709425344130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_35
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 643
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fbf321863de3db0800000000000000
+      internalID: -4810174908048883942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_36
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0703585902fcdd130800000000000000
+      internalID: 3593255816565960816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_37
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 517
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebc43f9696c36440800000000000000
+      internalID: 4928000767491886059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_38
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2cf5b1449ad00d0800000000000000
+      internalID: -3454919229141171513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_39
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca23d7844f48ebd0800000000000000
+      internalID: -2600741629051327794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_40
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 517
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5ae466ed057bcf0800000000000000
+      internalID: -236631539284269646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_41
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27c9c5ff9b884750800000000000000
+      internalID: 6289430398762600236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_42
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908127df652551cd0800000000000000
+      internalID: -2588071877281703927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_43
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 517
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0aef24c3ce421900800000000000000
+      internalID: 653671498639206923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_44
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34083d6ecd14eced0800000000000000
+      internalID: -2391901935065923517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_45
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73532a1935703f3e0800000000000000
+      internalID: -2021263752252213961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_46
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 517
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4659a8e791b9d650800000000000000
+      internalID: 6258228423209604687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_47
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 519
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0e7279a843a1d30800000000000000
+      internalID: 4402889355554185429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_48
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a66cebdf6a1ab8a0800000000000000
+      internalID: -6288684861936081239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_49
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 387
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeac52c523af4cf00800000000000000
+      internalID: 1136308100205497066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_50
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d702c8335fcbe9c0800000000000000
+      internalID: -3896793096217557034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_51
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26937c60b9c5cf3e0800000000000000
+      internalID: -2018636712065418910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_52
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 387
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27750504fcc482b30800000000000000
+      internalID: 4262741500327122802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_53
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f09a302e39b41c50800000000000000
+      internalID: 6635131827503403254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_54
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2731f6bef23b16af0800000000000000
+      internalID: -404845473091873934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_55
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 387
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815d15f871edc03c0800000000000000
+      internalID: -4391891343822957288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_56
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1fe95ab5815e360800000000000000
+      internalID: 7198186361321353632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_57
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8439254907b56f880800000000000000
+      internalID: -8577567901197626552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_58
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 387
+        width: 36
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722fd9c590b527a10800000000000000
+      internalID: 1905685688097829415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_59
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 391
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81affd0a1aeff5680800000000000000
+      internalID: -8764006379697473000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_60
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 259
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4c38c47b889c040800000000000000
+      internalID: 4668412809590326507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_61
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 259
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac5a3fc84d089950800000000000000
+      internalID: 6455924672201120930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_62
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 259
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595b51f2fbc0c44e0800000000000000
+      internalID: -1996206519563733611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_63
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 259
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8b28d7b12441730800000000000000
+      internalID: 3968869857457518756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_64
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 259
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70cfb2747418c6a0800000000000000
+      internalID: -6428865977697451907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_65
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 259
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd8788f3f95eeb40800000000000000
+      internalID: 5471409501683289563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_66
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 259
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2c4a8ec630f3510800000000000000
+      internalID: 1530946164623721191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_67
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 259
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8392e0b9189cc660800000000000000
+      internalID: 7407462723226866570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_68
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 259
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25790c84e2196a510800000000000000
+      internalID: 1560093948905559890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_69
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 259
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5c88b0e86617d30800000000000000
+      internalID: 4427432668946810356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_70
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 259
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a343959ff6fa0d0800000000000000
+      internalID: -3409383276162041304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_71
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 259
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85edc47a6fee2f540800000000000000
+      internalID: 5040353676117204568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_72
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 131
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3ed16ef1ad839e0800000000000000
+      internalID: -1641322233636985857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_73
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 131
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7410d0593c395de50800000000000000
+      internalID: 6833530477833158983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_74
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 131
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3d9eb9c0a88ed30800000000000000
+      internalID: 4460967217670509557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_75
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 131
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fec9686a197e32b0800000000000000
+      internalID: -5602907732074443018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_76
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 131
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a7891d30c45c9c0800000000000000
+      internalID: -3907633522388993483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_77
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 131
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e82a14fd90c43360800000000000000
+      internalID: 7148550293181573350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_78
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 131
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4478297f67052cc20800000000000000
+      internalID: 3225228755040634692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_79
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 131
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141915337dbaf5900800000000000000
+      internalID: 675447409896165697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_80
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 131
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4f5fcc1bedc15340800000000000000
+      internalID: 4850884683339095885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_81
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 131
+        width: 88
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fc91969ca4c8380800000000000000
+      internalID: -8967710529089319029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_82
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 131
+        width: 88
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cea1e61485908b80800000000000000
+      internalID: -8394545310866493752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_83
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 131
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37966599f17ff9230800000000000000
+      internalID: 3647905938282015091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_84
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3979543afc248e940800000000000000
+      internalID: 5325580018930522003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_85
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 5
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e560f402a859f580800000000000000
+      internalID: -8792899344573372955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_86
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6d8f4007bc33890800000000000000
+      internalID: -7479410874152069471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_87
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2597d21a3ed96b0800000000000000
+      internalID: -5287820106070928687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_88
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 5
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb723ed9b98a035a0800000000000000
+      internalID: -6543544872247023682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_89
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63db93a7292d01be0800000000000000
+      internalID: -1508474348611453642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_90
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c85c142eaa580d70800000000000000
+      internalID: 9009550758531324101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_91
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 5
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da552b8dd55a3140800000000000000
+      internalID: 4700163571125148375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_92
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc5c07c64e46a320800000000000000
+      internalID: 2568826703355600113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_93
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd19d4cb485ad0460800000000000000
+      internalID: 7209600568003498461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_94
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 5
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f17e0132af4f2590800000000000000
+      internalID: -7696845680126561807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: horse1_shadowless_2x_95
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 7
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a5cbc87e7e0edc0800000000000000
+      internalID: -3611631919466522041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      horse1_shadowless_2x_0: 3171259468008562050
+      horse1_shadowless_2x_1: 2388666558801315128
+      horse1_shadowless_2x_10: -5856754992358013645
+      horse1_shadowless_2x_11: 4976838987703884232
+      horse1_shadowless_2x_12: 1246705748055244413
+      horse1_shadowless_2x_13: -5164385523754992176
+      horse1_shadowless_2x_14: -747970147168062566
+      horse1_shadowless_2x_15: 61569685461660482
+      horse1_shadowless_2x_16: -8806814126031698186
+      horse1_shadowless_2x_17: 3910108349959741804
+      horse1_shadowless_2x_18: -7102181266988848702
+      horse1_shadowless_2x_19: -3337879082142172974
+      horse1_shadowless_2x_2: -6368064040081132243
+      horse1_shadowless_2x_20: 6054368749427664910
+      horse1_shadowless_2x_21: 8302017841496542891
+      horse1_shadowless_2x_22: 2622706474854368439
+      horse1_shadowless_2x_23: -1453793600420832769
+      horse1_shadowless_2x_24: 8595785903060833081
+      horse1_shadowless_2x_25: -5369009822744835891
+      horse1_shadowless_2x_26: -4353201292268161038
+      horse1_shadowless_2x_27: -2636137587615453117
+      horse1_shadowless_2x_28: 8969129877188859042
+      horse1_shadowless_2x_29: -5345624461215545893
+      horse1_shadowless_2x_3: -9010498296749761977
+      horse1_shadowless_2x_30: -5695380837553953168
+      horse1_shadowless_2x_31: 4039116805778838057
+      horse1_shadowless_2x_32: 4150175098259377418
+      horse1_shadowless_2x_33: -4072261545640983772
+      horse1_shadowless_2x_34: -3641324709425344130
+      horse1_shadowless_2x_35: -4810174908048883942
+      horse1_shadowless_2x_36: 3593255816565960816
+      horse1_shadowless_2x_37: 4928000767491886059
+      horse1_shadowless_2x_38: -3454919229141171513
+      horse1_shadowless_2x_39: -2600741629051327794
+      horse1_shadowless_2x_4: -6123698854330049266
+      horse1_shadowless_2x_40: -236631539284269646
+      horse1_shadowless_2x_41: 6289430398762600236
+      horse1_shadowless_2x_42: -2588071877281703927
+      horse1_shadowless_2x_43: 653671498639206923
+      horse1_shadowless_2x_44: -2391901935065923517
+      horse1_shadowless_2x_45: -2021263752252213961
+      horse1_shadowless_2x_46: 6258228423209604687
+      horse1_shadowless_2x_47: 4402889355554185429
+      horse1_shadowless_2x_48: -6288684861936081239
+      horse1_shadowless_2x_49: 1136308100205497066
+      horse1_shadowless_2x_5: 4113702910554200875
+      horse1_shadowless_2x_50: -3896793096217557034
+      horse1_shadowless_2x_51: -2018636712065418910
+      horse1_shadowless_2x_52: 4262741500327122802
+      horse1_shadowless_2x_53: 6635131827503403254
+      horse1_shadowless_2x_54: -404845473091873934
+      horse1_shadowless_2x_55: -4391891343822957288
+      horse1_shadowless_2x_56: 7198186361321353632
+      horse1_shadowless_2x_57: -8577567901197626552
+      horse1_shadowless_2x_58: 1905685688097829415
+      horse1_shadowless_2x_59: -8764006379697473000
+      horse1_shadowless_2x_6: -260070215286857561
+      horse1_shadowless_2x_60: 4668412809590326507
+      horse1_shadowless_2x_61: 6455924672201120930
+      horse1_shadowless_2x_62: -1996206519563733611
+      horse1_shadowless_2x_63: 3968869857457518756
+      horse1_shadowless_2x_64: -6428865977697451907
+      horse1_shadowless_2x_65: 5471409501683289563
+      horse1_shadowless_2x_66: 1530946164623721191
+      horse1_shadowless_2x_67: 7407462723226866570
+      horse1_shadowless_2x_68: 1560093948905559890
+      horse1_shadowless_2x_69: 4427432668946810356
+      horse1_shadowless_2x_7: -5241032553292804209
+      horse1_shadowless_2x_70: -3409383276162041304
+      horse1_shadowless_2x_71: 5040353676117204568
+      horse1_shadowless_2x_72: -1641322233636985857
+      horse1_shadowless_2x_73: 6833530477833158983
+      horse1_shadowless_2x_74: 4460967217670509557
+      horse1_shadowless_2x_75: -5602907732074443018
+      horse1_shadowless_2x_76: -3907633522388993483
+      horse1_shadowless_2x_77: 7148550293181573350
+      horse1_shadowless_2x_78: 3225228755040634692
+      horse1_shadowless_2x_79: 675447409896165697
+      horse1_shadowless_2x_8: 648270119222249033
+      horse1_shadowless_2x_80: 4850884683339095885
+      horse1_shadowless_2x_81: -8967710529089319029
+      horse1_shadowless_2x_82: -8394545310866493752
+      horse1_shadowless_2x_83: 3647905938282015091
+      horse1_shadowless_2x_84: 5325580018930522003
+      horse1_shadowless_2x_85: -8792899344573372955
+      horse1_shadowless_2x_86: -7479410874152069471
+      horse1_shadowless_2x_87: -5287820106070928687
+      horse1_shadowless_2x_88: -6543544872247023682
+      horse1_shadowless_2x_89: -1508474348611453642
+      horse1_shadowless_2x_9: 7576001369364911641
+      horse1_shadowless_2x_90: 9009550758531324101
+      horse1_shadowless_2x_91: 4700163571125148375
+      horse1_shadowless_2x_92: 2568826703355600113
+      horse1_shadowless_2x_93: 7209600568003498461
+      horse1_shadowless_2x_94: -7696845680126561807
+      horse1_shadowless_2x_95: -3611631919466522041
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

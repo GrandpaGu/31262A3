@@ -17,13 +17,18 @@ public class Level2SlimeController : MonoBehaviour
     [Header("Swallow")] public float swallowMoveSpeed = 2f, swallowDuration = 0.5f;
     [Header("Animator")] public Animator animator;
 
+    [Header("Glide Settings")]
+    public float glideGravityScale = 0.3f;   // 滑翔时使用的低重力
+    public bool enableGlide = false;         // 是否允许滑翔能力
+
     /*──────── 私有状态 ────────*/
     int extraJumps; bool isGrounded, isOnWall, isWallJumping;
     bool inLadderZone, climbingLadder, isSwallowing, platformIgnored;
     float swallowTimer, swallowDir, swallowOffset; Vector2 wallNormal;
 
     /*──────── 缓存 ───────────*/
-    Rigidbody2D rb; Collider2D col; int platformLayerIndex;
+    [HideInInspector] public Rigidbody2D rb;
+    Collider2D col; int platformLayerIndex;
 
     /*================================================================*/
     #region Unity
@@ -41,7 +46,6 @@ public class Level2SlimeController : MonoBehaviour
     {
         CheckGround();
 
-        /* 若已离开梯子触发区则自动退出爬梯 */
         if (climbingLadder && !inLadderZone) ExitLadder();
 
         HandleInput();
@@ -59,43 +63,47 @@ public class Level2SlimeController : MonoBehaviour
 
         if (climbingLadder) { LadderMove(); return; }
 
+        // 滑翔逻辑
+        if (!isGrounded && enableGlide && Input.GetKey(KeyCode.Space) && rb.velocity.y < 0f)
+        {
+            rb.gravityScale = glideGravityScale;
+        }
+        else if (!climbingLadder)
+        {
+            rb.gravityScale = defaultGravityScale;
+        }
+
         if (isOnWall && enableWallStick)
-        { rb.gravityScale = 0f; StickToWall(); MoveVertical(); }
+        { StickToWall(); MoveVertical(); }
         else
-        { rb.gravityScale = defaultGravityScale; MoveHorizontal(); }
+        { MoveHorizontal(); }
     }
     #endregion
 
-    /*================================================================*/
     #region Input
     void HandleInput()
     {
         if (Input.GetKeyDown(KeyCode.Space)) TryJump();
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl)) StartSwallow();
 
-        /*―― S 键逻辑 ――*/
         if (Input.GetKeyDown(KeyCode.S))
         {
             if (climbingLadder)
             {
-                // 在梯子上向下爬的同时触发穿透
                 StartCoroutine(DropThrough());
             }
             else if (isGrounded && IsStandingOnPlatform())
             {
-                // 站在平台上且非爬梯
                 StartCoroutine(DropThrough());
             }
         }
 
-        /*―― W / S 进入爬梯 ――*/
         float vRaw = Input.GetAxisRaw("Vertical");
         if (inLadderZone && !climbingLadder && Mathf.Abs(vRaw) > 0.01f)
             EnterLadder();
     }
     #endregion
 
-    /*================================================================*/
     #region 移动
     void MoveHorizontal()
     {
@@ -110,7 +118,6 @@ public class Level2SlimeController : MonoBehaviour
     void MoveVertical() => rb.velocity = new Vector2(0, Input.GetAxisRaw("Vertical") * climbSpeed);
     #endregion
 
-    /*================================================================*/
     #region Jump / Wall
     void TryJump()
     {
@@ -135,7 +142,6 @@ public class Level2SlimeController : MonoBehaviour
     void ClearWallJump() => isWallJumping = false;
     #endregion
 
-    /*================================================================*/
     #region Ladder
     void EnterLadder()
     {
@@ -173,7 +179,6 @@ public class Level2SlimeController : MonoBehaviour
     }
     #endregion
 
-    /*================================================================*/
     #region Swallow
     void StartSwallow()
     {
@@ -183,7 +188,6 @@ public class Level2SlimeController : MonoBehaviour
     }
     #endregion
 
-    /*================================================================*/
     #region Ground & Wall
     void CheckGround()
     {
@@ -223,7 +227,6 @@ public class Level2SlimeController : MonoBehaviour
     }
     #endregion
 
-    /*================================================================*/
     #region Triggers
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -237,7 +240,6 @@ public class Level2SlimeController : MonoBehaviour
     }
     #endregion
 
-    /*================================================================*/
     #region Drop‑Through
     IEnumerator DropThrough()
     {

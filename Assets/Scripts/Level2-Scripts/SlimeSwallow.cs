@@ -1,12 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public enum AbilityType
-{
-    None,
-    SpeedUp
-}
-
 public class Ability
 {
     public AbilityType type;
@@ -15,53 +9,60 @@ public class Ability
 
 public class SlimeSwallow : MonoBehaviour
 {
+    /*──────── 组件引用 ────────*/
+    [Header("外部组件")]
+    public SlimeAbilityManager abilityMgr;   // ← Inspector 拖 Slime 进来
+
+    /*──────── 检测设置 ────────*/
     [Header("检测设置")]
     public Transform swallowCenter;
     public float swallowRadius = 1f;
     public LayerMask swallowableLayer;
 
+    /*──────── 吞噬动画 ────────*/
     [Header("吞噬时间")]
     public float swallowDuration = 0.883f;
-    public float swallowMoveSpeed = 2f;    // 【新增】吞噬时往前位移速度（米/秒）
-    private float swallowMoveTimer = 0f;
+    public float swallowMoveSpeed = 2f;
+    float swallowTimer, swallowMoveTimer;
 
+    /*──────── Yue动画 ─────────*/
     [Header("Yue动画设置")]
     public string yueTriggerName = "Yue";
     public float yueDuration = 0.8f;
-    public float yueMoveSpeed = 2f;         // 【新增】Yue时往后位移速度
-    private float yueMoveTimer = 0f;
+    public float yueMoveSpeed = 2f;
+    float yueTimer, yueMoveTimer;
 
+    /*──────── 能力槽 ──────────*/
     [Header("能力槽")]
     public int maxSlots = 3;
-    private List<Ability> slots = new();
-    private int currentIndex = 0;
+    List<Ability> slots = new();
+    int currentIndex = 0;
 
-    /* 内部状态 */
-    float swallowTimer = 0f;
+    /*──────── 状态标志 ────────*/
     bool swallowedThisPress = false;
-    float yueTimer = 0f;
 
     Animator anim;
     Rigidbody2D rb;
 
+    /*================ Awake ================*/
     void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        if (!abilityMgr)
+            abilityMgr = GetComponent<SlimeAbilityManager>(); // 同物体上自动取
     }
 
+    /*================ Update ===============*/
     void Update()
     {
-        /* === Ctrl 吞噬输入 === */
-        if (yueTimer <= 0f)
+        if (yueTimer <= 0f &&
+            (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl)))
         {
-            if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.RightControl))
-            {
-                swallowTimer = swallowDuration;
-                swallowMoveTimer = swallowDuration;  // ←开始位移
-                swallowedThisPress = false;
-                Debug.Log($"<color=lime>开始吞噬窗口 ({swallowDuration:F3}s)</color>");
-            }
+            swallowTimer = swallowDuration;
+            swallowMoveTimer = swallowDuration;
+            swallowedThisPress = false;
         }
 
         if (swallowTimer > 0f)
@@ -70,85 +71,77 @@ public class SlimeSwallow : MonoBehaviour
             if (!swallowedThisPress) DetectAndSwallow();
         }
 
-        /* === R键触发 Yue 动画 + 删除能力 + 后退 === */
         if (Input.GetKeyDown(KeyCode.R) && swallowTimer <= 0f && yueTimer <= 0f)
-        {
-            PlayYueAnimationAndDropSkill();
-        }
+            PlayYueAndDrop();
 
         if (yueTimer > 0f) yueTimer -= Time.deltaTime;
 
-        /* === 槽位快捷键 === */
         if (Input.GetKeyDown(KeyCode.Alpha1)) SwitchAbility(0);
         if (Input.GetKeyDown(KeyCode.Alpha2)) SwitchAbility(1);
         if (Input.GetKeyDown(KeyCode.Alpha3)) SwitchAbility(2);
     }
 
+    /*================ FixedUpdate ============*/
     void FixedUpdate()
     {
-        // 固定帧移动，处理平移
-
         if (swallowMoveTimer > 0f)
         {
             swallowMoveTimer -= Time.fixedDeltaTime;
-            float dir = transform.localScale.x > 0 ? 1f : -1f;  // 朝面朝方向前进
-            rb.position += new Vector2(dir * swallowMoveSpeed * Time.fixedDeltaTime, 0f);
+            float dir = transform.localScale.x > 0 ? 1f : -1f;
+            rb.position += Vector2.right * dir * swallowMoveSpeed * Time.fixedDeltaTime;
         }
 
         if (yueMoveTimer > 0f)
         {
             yueMoveTimer -= Time.fixedDeltaTime;
-            float dir = transform.localScale.x > 0 ? -1f : 1f;  // 朝反方向后退
-            rb.position += new Vector2(dir * yueMoveSpeed * Time.fixedDeltaTime, 0f);
+            float dir = transform.localScale.x > 0 ? -1f : 1f;
+            rb.position += Vector2.right * dir * yueMoveSpeed * Time.fixedDeltaTime;
         }
     }
 
-    // ========== 播放 Yue 动画并丢弃当前技能 ==========
-    void PlayYueAnimationAndDropSkill()
-    {
-        if (anim != null)
-        {
-            anim.ResetTrigger(yueTriggerName);
-            anim.SetTrigger(yueTriggerName);
-            Debug.Log($"<color=purple>播放动画 Trigger: {yueTriggerName}</color>");
-        }
-
-        yueTimer = yueDuration;
-        yueMoveTimer = yueDuration;  // ←开始后退位移
-
-        if (slots.Count > 0)
-        {
-            Debug.Log($"<color=orange>丢弃槽位{currentIndex + 1}: {slots[currentIndex].type}</color>");
-            slots.RemoveAt(currentIndex);
-            currentIndex = Mathf.Clamp(currentIndex, 0, slots.Count - 1);
-            PrintSlots();
-        }
-        else
-        {
-            Debug.Log("<color=grey>当前无技能，只播放Yue动画</color>");
-        }
-    }
-
-    // ========== 吞噬检测 ==========
+    /*=========== 吞噬检测 ===========*/
     void DetectAndSwallow()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(swallowCenter.position,
-                                                       swallowRadius,
-                                                       swallowableLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(
+            swallowCenter.position, swallowRadius, swallowableLayer);
         if (hits.Length == 0) return;
 
-        var target = hits[0];
-        Debug.Log($"<color=yellow>吞噬对象：{target.name}</color>");
+        Collider2D target = hits[0];
+        Debug.Log($"吞噬对象：{target.name}");
 
-        if (target.name.ToLower().Contains("goat"))
-            AddAbility(AbilityType.SpeedUp);
+        AbilityType gained = AbilityType.None;
+        SwallowableSkill swComp = target.GetComponent<SwallowableSkill>();
+        if (swComp) gained = swComp.abilityGranted;
+
+        if (gained != AbilityType.None)
+            AddAbility(gained);
 
         Destroy(target.gameObject);
-
         swallowedThisPress = true;
     }
 
-    // ========== 能力槽管理 ==========
+    /*=========== Yue动画 + 丢弃 ===========*/
+    void PlayYueAndDrop()
+    {
+        if (anim) { anim.ResetTrigger(yueTriggerName); anim.SetTrigger(yueTriggerName); }
+
+        yueTimer = yueDuration;
+        yueMoveTimer = yueDuration;
+
+        if (slots.Count > 0)
+        {
+            abilityMgr.SetAbility(AbilityType.None);     // 清除旧效果
+            slots.RemoveAt(currentIndex);
+            currentIndex = Mathf.Clamp(currentIndex, 0, slots.Count - 1);
+
+            if (slots.Count > 0)                         // 若还有能力则激活新槽
+                abilityMgr.SetAbility(slots[currentIndex].type);
+
+            PrintSlots();
+        }
+    }
+
+    /*=========== 能力槽管理 ===========*/
     void AddAbility(AbilityType type)
     {
         if (slots.Count >= maxSlots)
@@ -156,22 +149,27 @@ public class SlimeSwallow : MonoBehaviour
             Debug.Log("<color=red>槽位已满，无法获得新能力</color>");
             return;
         }
+
         slots.Add(new Ability(type));
         currentIndex = slots.Count - 1;
         PrintSlots();
+
+        abilityMgr.SetAbility(type);     // 让 AbilityManager 生效
     }
 
     void SwitchAbility(int idx)
     {
-        currentIndex = idx; // 无论如何都切换索引
+        currentIndex = idx;
 
         if (idx < slots.Count)
         {
             Debug.Log($"<color=cyan>切换到槽位{idx + 1}: {slots[idx].type}</color>");
+            abilityMgr.SetAbility(slots[idx].type);
         }
         else
         {
-            Debug.Log($"<color=grey>切换到槽位{idx + 1}: 当前槽位没有技能</color>");
+            Debug.Log($"<color=grey>槽位{idx + 1}: 当前无技能</color>");
+            abilityMgr.SetAbility(AbilityType.None);
         }
     }
 
@@ -179,15 +177,13 @@ public class SlimeSwallow : MonoBehaviour
     {
         Debug.Log("—— 当前能力槽 ——");
         for (int i = 0; i < slots.Count; i++)
-        {
-            string active = (i == currentIndex) ? " [激活]" : "";
-            Debug.Log($"槽{i + 1}: {slots[i].type}{active}");
-        }
+            Debug.Log($"槽{i + 1}: {slots[i].type}{(i == currentIndex ? " [激活]" : "")}");
     }
 
+    /*=========== Scene Gizmo ===========*/
     void OnDrawGizmosSelected()
     {
-        if (swallowCenter == null) return;
+        if (!swallowCenter) return;
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(swallowCenter.position, swallowRadius);
     }
