@@ -43,19 +43,19 @@ public class SlimeController : MonoBehaviour
 
     /*──────────── Grapple Settings ─────────────*/
     [Header("Grapple")]
-    public LayerMask grappleLayer; // Set to "Ground" layer in Inspector
+    public LayerMask grappleLayer; 
     public LineRenderer grappleLine;
     public float grappleMaxDistance = 10f;
     public float grappleSwingForce = 15f;
 
-    // Crosshair Prefab to show at max grapple distance
-    public GameObject crosshairPrefab; // Assign in the Inspector
+    
+    public GameObject crosshairPrefab;
     private GameObject crosshairInstance;
 
-    // Grapple shoot animation curve
+    
     [Header("Grapple Animation")]
-    public AnimationCurve grappleShootAnimationCurve;  // Assign curve in the inspector
-    public float grappleShootDuration = 0.5f;          // Time to shoot the grapple hook
+    public AnimationCurve grappleShootAnimationCurve;  
+    public float grappleShootDuration = 0.5f;         
 
     private bool isGrappling = false;
     private Vector2 grapplePoint;
@@ -133,7 +133,7 @@ public class SlimeController : MonoBehaviour
             grappleLine.SetPosition(1, grapplePoint);
         }
 
-        // Display the crosshair at the maximum grapple distance
+       
         if (crosshairPrefab != null)
         {
             UpdateCrosshair();
@@ -149,7 +149,7 @@ public class SlimeController : MonoBehaviour
             return;
         }
 
-        // If not grappling, we can use normal movement
+     
         if (isGrappling)
         {
             // Direction from player to anchor
@@ -161,13 +161,12 @@ public class SlimeController : MonoBehaviour
         }
         else if (isAirborneAfterGrapple)
         {
-            // Continue to apply swing-like behavior if airborne after detachment
-            // Use momentum from before detachment, allowing them to "swing" in the air
+           
             Vector2 momentum = rb.velocity;
             rb.velocity = new Vector2(momentum.x, rb.velocity.y);
 
             // Keep the player in the air with swing momentum until they hit the ground
-            if (isGrounded) // when the player lands
+            if (isGrounded) 
             {
                 isAirborneAfterGrapple = false;
             }
@@ -328,7 +327,7 @@ public class SlimeController : MonoBehaviour
             {
                 grappleLine.enabled = true;
                 grappleLine.positionCount = 2;
-                StartCoroutine(AnimateGrappleShoot());  // Start the animation when the grapple is shot
+                StartCoroutine(AnimateGrappleShoot()); 
             }
         }
     }
@@ -337,7 +336,7 @@ public class SlimeController : MonoBehaviour
     {
         if (isGrappling)
         {
-            // Capture current velocity (important: capture horizontal swing momentum)
+            
             Vector2 momentum = rb.velocity;
 
             // Disable the grapple
@@ -345,13 +344,12 @@ public class SlimeController : MonoBehaviour
             grappleJoint.enabled = false;
             if (grappleLine) grappleLine.enabled = false;
 
-            // Preserve horizontal momentum, and apply vertical motion naturally
             rb.velocity = new Vector2(momentum.x, rb.velocity.y);
 
-            // Set a flag indicating the player is airborne after detachment
+           
             isAirborneAfterGrapple = true;
 
-            // Destroy the crosshair
+          
             if (crosshairInstance != null)
             {
                 Destroy(crosshairInstance);
@@ -362,7 +360,7 @@ public class SlimeController : MonoBehaviour
     /*=========== 外部接口 (留空) ============*/
     public void BeginNaturalStop() { }
 
-    // Update the crosshair position
+   
     void UpdateCrosshair()
     {
         Vector2 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -371,7 +369,7 @@ public class SlimeController : MonoBehaviour
 
         Vector2 crosshairPos = transform.position + (Vector3)(direction * grappleMaxDistance);
 
-        // If there's a valid grapple point, use that position, otherwise, stick to max distance
+       
         if (hit.collider != null)
         {
             crosshairPos = hit.point;
@@ -392,24 +390,24 @@ public class SlimeController : MonoBehaviour
     {
         float timeElapsed = 0f;
 
-        // While the grapple shoot animation is ongoing, extend the line
+       
         while (timeElapsed < grappleShootDuration)
         {
             timeElapsed += Time.deltaTime;
 
-            // Calculate the animation curve value (normalized between 0 and 1)
+            
             float curveValue = grappleShootAnimationCurve.Evaluate(timeElapsed / grappleShootDuration);
 
-            // Use the curve to extend the grapple line
+            
             Vector2 extendedGrapplePoint = Vector2.Lerp(transform.position, grapplePoint, curveValue);
 
-            // Update the grapple line
+            
             grappleLine.SetPosition(1, extendedGrapplePoint);
 
             yield return null;
         }
 
-        // Once the animation is complete, finalize the grapple line position at the target
+        
         grappleLine.SetPosition(1, grapplePoint);
     }
 }
