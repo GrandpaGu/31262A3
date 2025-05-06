@@ -8,8 +8,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MovementSampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TutorialSceneTrial2.unity
     guid: daf35c0063c8ae94ba8136afa7eee6bf
+  - enabled: 1
+    path: Assets/Scenes/Level2Forest.unity
+    guid: d62ad3806ba889e478f563806ba798da
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

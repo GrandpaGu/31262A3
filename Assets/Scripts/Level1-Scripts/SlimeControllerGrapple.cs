@@ -1,7 +1,7 @@
 ﻿﻿using System.Collections;
 using UnityEngine;
 
-public class SlimeController : MonoBehaviour
+public class SlimeControllerGrapple : MonoBehaviour
 {
     /*──────────── Movement Settings ────────────*/
     [Header("Movement")]

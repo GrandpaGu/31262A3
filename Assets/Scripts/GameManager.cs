@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     [Header("玩家对蟻E(拖拽 Slime)")]
-    public SlimeController player;          // 在 Inspector 把 Slime 拖进来
+    public SlimeControllerGrapple player;          // 在 Inspector 把 Slime 拖进来
 
     [HideInInspector] public bool isInputLocked = false;
 
