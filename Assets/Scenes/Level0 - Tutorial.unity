@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d15b0fdb2bbda4e8a5a5b6748548e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 142714494}
   isInputLocked: 0
 --- !u!1001 &1707024440
 PrefabInstance:

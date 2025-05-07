@@ -5860,10 +5860,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 157858171}
-  offset: {x: 0, y: 0, z: -10}
+  offset: {x: 0, y: 3, z: -10}
   deadZoneWidth: 2
-  deadZoneHeight: 1.5
-  lookAheadDistance: 2
+  deadZoneHeight: 1
+  lookAheadDistance: 0
   lookAheadSmoothTime: 0.1
   smoothTime: 0.15
 --- !u!1660057539 &9223372036854775807
