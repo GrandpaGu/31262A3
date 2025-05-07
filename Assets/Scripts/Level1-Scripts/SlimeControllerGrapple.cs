@@ -188,7 +188,7 @@ public class SlimeControllerGrapple : MonoBehaviour
     /*==================== Input =================*/
     void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) TryJump();
+        if (Input.GetKeyDown(KeyCode.W)) TryJump();
 
         if (enableCrouch && circleCol)
         {
@@ -198,8 +198,11 @@ public class SlimeControllerGrapple : MonoBehaviour
             transform.localScale = new Vector3(transform.localScale.x, scaleY, transform.localScale.z);
         }
 
-        if (Input.GetMouseButtonDown(0) && !isGrappling) TryGrapple();
-        if (Input.GetMouseButtonDown(1) && isGrappling) CancelGrapple();
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            if (!isGrappling) TryGrapple();
+            else CancelGrapple();
+        }
+
     }
 
     /*================ Horizontal Move ============*/
