@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4334210795626845515}
   - component: {fileID: 2676473844673132677}
   - component: {fileID: 8283401833340751667}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mushroom_1
   m_TagString: Mushroom
   m_Icon: {fileID: 0}
@@ -95,6 +95,7 @@ MonoBehaviour:
   bounceForce: 15
   squishAmount: 0.8
   squishTime: 0.1
+  bounce: {fileID: 0}
 --- !u!1 &8599643495272528799
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3631565445505214161}
   - component: {fileID: 1339163227064472402}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TileMap_33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
