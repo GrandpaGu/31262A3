@@ -8,11 +8,11 @@ public class BunnyPatrol : MonoBehaviour
     public float jumpForceY = 5f;
     public float jumpInterval = 2f;
 
-    [Header("巡逻边界")]
+    [Header("巡逻边絹E")]
     public Transform leftBound;
     public Transform rightBound;
 
-    [Header("地面检测")]
+    [Header("地面紒E丒")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
@@ -35,7 +35,7 @@ public class BunnyPatrol : MonoBehaviour
 
     void Update()
     {
-        // 地面检测
+        // 地面紒E丒
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         if (animator) animator.SetBool("IsGrounded", isGrounded);
 
@@ -50,13 +50,13 @@ public class BunnyPatrol : MonoBehaviour
             }
         }
 
-        // 更新朝向
+        // 竵E鲁丒
         UpdateFacingDirection();
     }
 
     void Jump()
     {
-        // 边界检测
+        // 边界紒E丒
         if (movingRight && transform.position.x > rightBound.position.x)
             movingRight = false;
         else if (!movingRight && transform.position.x < leftBound.position.x)
@@ -79,7 +79,7 @@ public class BunnyPatrol : MonoBehaviour
         transform.localScale = scale;
     }
 
-    // 可视化地面检测点
+    // 可视化地面紒E獾丒
     void OnDrawGizmosSelected()
     {
         if (groundCheck)

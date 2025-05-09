@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class BatController : MonoBehaviour
 {
-    [Header("ÉèÖÃÄ¿±ê¶ÔÏó")]
-    public Transform slime;            // Ê·À³Ä·¶ÔÏó
+    [Header("ÉèÖÃÄ¿±EÔÏE")]
+    public Transform slime;            // Ê·À³Ä·¶ÔÏE
 
     [Header("»½ĞÑ²ÎÊı")]
-    public float wakeUpDistance = 5f;   // »½ĞÑµÄ¾àÀë
+    public float wakeUpDistance = 5f;   // »½ĞÑµÄ¾àÀE
 
-    [Header("Ñ²Âßµã")]
+    [Header("Ñ²ÂßµE")]
     public Transform patrolPointA;      // Ñ²ÂßµãA
     public Transform patrolPointB;      // Ñ²ÂßµãB
     public float patrolSpeed = 2f;       // Ñ²ÂßËÙ¶È
@@ -16,7 +16,7 @@ public class BatController : MonoBehaviour
     private Animator animator;          // òùòğµÄAnimator
     private bool hasWokenUp = false;     // ÊÇ·ñÒÑ¾­ĞÑÀ´
     private bool isPatrolling = false;   // ÊÇ·ñÒÑ¾­¿ªÊ¼Ñ²Âß
-    private Transform targetPoint;       // µ±Ç°Ñ²ÂßµÄÄ¿±êµã
+    private Transform targetPoint;       // µ±Ç°Ñ²ÂßµÄÄ¿±EE
 
 
     void Start()
@@ -45,8 +45,8 @@ public class BatController : MonoBehaviour
     void WakeUp()
     {
         hasWokenUp = true;
-        animator.SetTrigger("WakeUpTrigger");  // ´¥·¢¶¯»­ÀïµÄWakeUpTrigger
-        Invoke(nameof(StartPatrolling), 1.0f); // µÈ¶¯»­²¥Íê¿ªÊ¼Ñ²Âß£¬1.0Ãë¸ù¾İ¶¯»­³¤¶Èµ÷Õû
+        animator.SetTrigger("WakeUpTrigger");  // ´¥·¢¶¯»­ÀEÄWakeUpTrigger
+        Invoke(nameof(StartPatrolling), 1.0f); // µÈ¶¯»­²¥ÍEªÊ¼Ñ²Âß£¬1.0ÃEù¾İ¶¯»­³¤¶Èµ÷ÕE
     }
 
     // ¿ªÊ¼Ñ²Âß
@@ -63,10 +63,10 @@ public class BatController : MonoBehaviour
         // ÏÈÒÆ¶¯òùòğ
         transform.position = Vector2.MoveTowards(transform.position, targetPoint.position, patrolSpeed * Time.deltaTime);
 
-        // Èç¹û·Ç³£½Ó½üÄ¿±êµã£¬²Å¿¼ÂÇÇĞ»»
+        // Èç¹û·Ç³£½Ó½E¿±Eã£¬²Å¿¼ÂÇÇĞ»»
         if (Vector2.Distance(transform.position, targetPoint.position) <= 0.05f)
         {
-            // ÇĞ»»Ä¿±êµã
+            // ÇĞ»»Ä¿±EE
             if (targetPoint == patrolPointA)
             {
                 targetPoint = patrolPointB;
@@ -76,12 +76,12 @@ public class BatController : MonoBehaviour
                 targetPoint = patrolPointA;
             }
 
-            Flip(); // ÇĞ»»·½Ïò
+            Flip(); // ÇĞ»»·½ÏE
         }
     }
 
 
-    // ·­×ªòùòğ³¯Ïò
+    // ·­×ªòùòğ³¯ÏE
     void Flip()
     {
         Vector3 scale = transform.localScale;

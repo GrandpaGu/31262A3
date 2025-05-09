@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class CameraFollowFlexible : MonoBehaviour
 {
-    [Header("¸úËæÄ¿±ê")]
+    [Header("¸úËæÄ¿±E")]
     public Transform target;
 
     [Header("¸úËæÉèÖÃ")]
     public bool followX = false;           // ÊÇ·ñ¸úËæXÖá£¨Ä¬ÈÏ·ñ£©
     public float smoothSpeed = 0.125f;     // ¸úËæÆ½»¬¶È
-    public float fixedX = 0f;              // ¹Ì¶¨X×ø±ê
-    public float fixedZ = -10f;            // ÉãÏñ»úZÖá£¨Í¨³£Îª-10£©
+    public float fixedX = 0f;              // ¹Ì¶¨X×ø±E
+    public float fixedZ = -10f;            // ÉãÏñ»‡„Öá£¨Í¨³£Îª-10£©
 
     void LateUpdate()
     {

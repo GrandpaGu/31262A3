@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HorsePatrol : MonoBehaviour
 {
-    [Header("Ñ²Âßµã")]
+    [Header("Ñ²ÂßµE")]
     public Transform patrolPointA;
     public Transform patrolPointB;
 

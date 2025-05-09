@@ -11,16 +11,16 @@ public class SlimeSwallow : MonoBehaviour
 {
     /*©¤©¤©¤©¤©¤©¤©¤©¤ ×é¼şÒıÓÃ ©¤©¤©¤©¤©¤©¤©¤©¤*/
     [Header("Íâ²¿×é¼ş")]
-    public SlimeAbilityManager abilityMgr;   // ¡û Inspector ÍÏ Slime ½øÀ´
+    public SlimeAbilityManager abilityMgr;   // ¡EInspector ÍÏ Slime ½øÀ´
 
-    /*©¤©¤©¤©¤©¤©¤©¤©¤ ¼ì²âÉèÖÃ ©¤©¤©¤©¤©¤©¤©¤©¤*/
-    [Header("¼ì²âÉèÖÃ")]
+    /*©¤©¤©¤©¤©¤©¤©¤©¤ ¼EâÉèÖÃ ©¤©¤©¤©¤©¤©¤©¤©¤*/
+    [Header("¼EâÉèÖÃ")]
     public Transform swallowCenter;
     public float swallowRadius = 1f;
     public LayerMask swallowableLayer;
 
     /*©¤©¤©¤©¤©¤©¤©¤©¤ ÍÌÊÉ¶¯»­ ©¤©¤©¤©¤©¤©¤©¤©¤*/
-    [Header("ÍÌÊÉÊ±¼ä")]
+    [Header("ÍÌÊÉÊ±¼E")]
     public float swallowDuration = 0.883f;
     public float swallowMoveSpeed = 2f;
     float swallowTimer, swallowMoveTimer;
@@ -38,7 +38,7 @@ public class SlimeSwallow : MonoBehaviour
     List<Ability> slots = new();
     int currentIndex = 0;
 
-    /*©¤©¤©¤©¤©¤©¤©¤©¤ ×´Ì¬±êÖ¾ ©¤©¤©¤©¤©¤©¤©¤©¤*/
+    /*©¤©¤©¤©¤©¤©¤©¤©¤ ×´Ì¬±E¾ ©¤©¤©¤©¤©¤©¤©¤©¤*/
     bool swallowedThisPress = false;
 
     Animator anim;
@@ -51,7 +51,7 @@ public class SlimeSwallow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         if (!abilityMgr)
-            abilityMgr = GetComponent<SlimeAbilityManager>(); // Í¬ÎïÌåÉÏ×Ô¶¯È¡
+            abilityMgr = GetComponent<SlimeAbilityManager>(); // Í¬ÎEåÉÏ×Ô¶¯È¡
     }
 
     /*================ Update ===============*/
@@ -99,7 +99,7 @@ public class SlimeSwallow : MonoBehaviour
         }
     }
 
-    /*=========== ÍÌÊÉ¼ì²â ===========*/
+    /*=========== ÍÌÊÉ¼EE===========*/
     void DetectAndSwallow()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(
@@ -120,7 +120,7 @@ public class SlimeSwallow : MonoBehaviour
         swallowedThisPress = true;
     }
 
-    /*=========== Yue¶¯»­ + ¶ªÆú ===========*/
+    /*=========== Yue¶¯»­ + ¶ªÆE===========*/
     void PlayYueAndDrop()
     {
         if (anim) { anim.ResetTrigger(yueTriggerName); anim.SetTrigger(yueTriggerName); }
@@ -130,18 +130,18 @@ public class SlimeSwallow : MonoBehaviour
 
         if (slots.Count > 0)
         {
-            abilityMgr.SetAbility(AbilityType.None);     // Çå³ı¾ÉĞ§¹û
+            abilityMgr.SetAbility(AbilityType.None);     // Çå³ı¾ÉĞ§¹E
             slots.RemoveAt(currentIndex);
             currentIndex = Mathf.Clamp(currentIndex, 0, slots.Count - 1);
 
-            if (slots.Count > 0)                         // Èô»¹ÓĞÄÜÁ¦Ôò¼¤»îĞÂ²Û
+            if (slots.Count > 0)                         // Èô»¹ÓĞÄÜÁ¦Ôò¼¤»ûìÂ²Û
                 abilityMgr.SetAbility(slots[currentIndex].type);
 
             PrintSlots();
         }
     }
 
-    /*=========== ÄÜÁ¦²Û¹ÜÀí ===========*/
+    /*=========== ÄÜÁ¦²Û¹ÜÀE===========*/
     void AddAbility(AbilityType type)
     {
         if (slots.Count >= maxSlots)
@@ -177,7 +177,7 @@ public class SlimeSwallow : MonoBehaviour
     {
         Debug.Log("¡ª¡ª µ±Ç°ÄÜÁ¦²Û ¡ª¡ª");
         for (int i = 0; i < slots.Count; i++)
-            Debug.Log($"²Û{i + 1}: {slots[i].type}{(i == currentIndex ? " [¼¤»î]" : "")}");
+            Debug.Log($"²Û{i + 1}: {slots[i].type}{(i == currentIndex ? " [¼¤»ûy" : "")}");
     }
 
     /*=========== Scene Gizmo ===========*/

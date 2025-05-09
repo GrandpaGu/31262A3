@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RedBullPatrol : MonoBehaviour
 {
-    [Header("Ñ²Âßµã")]
+    [Header("Ñ²ÂßµE")]
     public Transform patrolPointA;
     public Transform patrolPointB;
 
