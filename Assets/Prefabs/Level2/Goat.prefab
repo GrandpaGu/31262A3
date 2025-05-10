@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7395450817572199605}
   m_Layer: 9
-  m_Name: GoatGroup
+  m_Name: Goat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

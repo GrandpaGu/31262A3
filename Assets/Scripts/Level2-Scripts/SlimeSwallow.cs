@@ -123,19 +123,30 @@ public class SlimeSwallow : MonoBehaviour
     /*=========== Yue动画 + 丢弃 ===========*/
     void PlayYueAndDrop()
     {
-        if (anim) { anim.ResetTrigger(yueTriggerName); anim.SetTrigger(yueTriggerName); }
+        if (anim)
+        {
+            anim.ResetTrigger(yueTriggerName);
+            anim.SetTrigger(yueTriggerName);
+        }
 
         yueTimer = yueDuration;
         yueMoveTimer = yueDuration;
 
         if (slots.Count > 0)
         {
-            abilityMgr.SetAbility(AbilityType.None);     // 清除旧效果
+            abilityMgr.SetAbility(AbilityType.None); // 清除旧效果
             slots.RemoveAt(currentIndex);
-            currentIndex = Mathf.Clamp(currentIndex, 0, slots.Count - 1);
 
-            if (slots.Count > 0)                         // 若还有能力则激活新槽
-                abilityMgr.SetAbility(slots[currentIndex].type);
+            // 修正 currentIndex 保持在有效范围内
+            if (slots.Count == 0)
+            {
+                currentIndex = 0;
+            }
+            else
+            {
+                currentIndex = Mathf.Clamp(currentIndex, 0, slots.Count - 1);
+                abilityMgr.SetAbility(slots[currentIndex].type); // 如果还有能力则激活
+            }
 
             PrintSlots();
         }

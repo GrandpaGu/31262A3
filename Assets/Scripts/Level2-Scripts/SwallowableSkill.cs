@@ -6,9 +6,9 @@ public enum AbilityType
     SpeedUp,      // Horse ¡ú ¼ÓËÙ
     HighJump,     // Rabbit ¡ú ÌøÔ¾Á¦
     Dash,         // Redbull ¡ú ÂùÅ£³å´Ì
-    Glide,         // Bird ¡ú »¬Ïè
-    WallJump,     //Goat ¡ú µÅÇ½Ìø
-    AttackSwallow //Ä§ÀÇ ¡ú ÍÌÊÉ¹ÖÎï
+    Glide,        // Äñ ¡ú »¬Ïè
+    WallJump,     //Ñò ¡ú µÅÇ½Ìø
+    Swim          //öèÓã  ÓÎÓ¾
 }
 
 /// <summary>

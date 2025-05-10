@@ -21,6 +21,8 @@ public class Level2SlimeController : MonoBehaviour
     public float glideGravityScale = 0.3f;   // 滑翔时使用的低重力
     public bool enableGlide = false;         // 是否允许滑翔能力
 
+    [HideInInspector] public bool hasSwimAbility = false;
+    [HideInInspector] public float waterDragFactor = 1f;   // 默认 1
     /*──────── 私有状态 ────────*/
     int extraJumps; bool isGrounded, isOnWall, isWallJumping;
     bool inLadderZone, climbingLadder, isSwallowing, platformIgnored;
@@ -41,7 +43,11 @@ public class Level2SlimeController : MonoBehaviour
         platformLayerIndex = Mathf.RoundToInt(Mathf.Log(platformLayer.value, 2));
         extraJumps = maxExtraJumps;
     }
-
+    public void Die()
+    {
+        Debug.Log("[Player] 玩家死亡，触发 RespawnManager");
+        RespawnManager.Instance.StartRespawn(gameObject);
+    }
     void Update()
     {
         CheckGround();
@@ -103,7 +109,7 @@ public class Level2SlimeController : MonoBehaviour
             EnterLadder();
     }
     #endregion
-
+    
     #region 移动
     void MoveHorizontal()
     {
@@ -207,7 +213,7 @@ public class Level2SlimeController : MonoBehaviour
         return Physics2D.OverlapCircle(origin, groundCheckRadius, platformLayer);
     }
 
-    void StickToWall() => rb.AddForce(-wallNormal * 20);
+    void StickToWall() => rb.AddForce(-wallNormal * 10);
 
     void OnCollisionEnter2D(Collision2D c) => EvaluateContacts(c);
     void OnCollisionStay2D(Collision2D c) => EvaluateContacts(c);

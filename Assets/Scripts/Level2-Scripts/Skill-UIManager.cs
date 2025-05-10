@@ -40,8 +40,9 @@ public class SkillUIManager : MonoBehaviour
 
             if (i >= abilities.Count)
             {
-                img.sprite = emptySprite;
-                img.material = grayscaleMaterial;
+                img.sprite = null;  // 不设置任何图片
+                img.color = new Color(1, 1, 1, 0); // 完全透明
+                img.material = null; // 移除灰度材质
             }
             else
             {
@@ -49,10 +50,15 @@ public class SkillUIManager : MonoBehaviour
                 int idx = (int)ability.type;
 
                 if (idx >= 0 && idx < iconTable.Count && iconTable[idx] != null)
+                {   
                     img.sprite = iconTable[idx];
+                    img.preserveAspect = true; // 保持图标比例
+                }
                 else
                     img.sprite = emptySprite;
 
+                img.color = Color.white; // 恢复可见
+                img.preserveAspect = true;
                 img.material = (i == current) ? null : grayscaleMaterial;
             }
         }

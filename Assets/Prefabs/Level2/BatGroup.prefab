@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 520331003862696517}
   - component: {fileID: 6131375985142764778}
   - component: {fileID: 6449958682345071520}
-  - component: {fileID: 8606852917377613365}
+  - component: {fileID: 2834541907282589318}
+  - component: {fileID: 4267093398786769291}
   m_Layer: 9
   m_Name: Bat
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 88939393703258834}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 6.26, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -128,7 +129,53 @@ MonoBehaviour:
   patrolPointA: {fileID: 7634973284488197053}
   patrolPointB: {fileID: 5177439808069971087}
   patrolSpeed: 4
---- !u!114 &8606852917377613365
+--- !u!61 &2834541907282589318
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88939393703258834}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.12, y: 0.26}
+    newSize: {x: 0.12, y: 0.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.12, y: 0.26}
+  m_EdgeRadius: 0
+--- !u!114 &4267093398786769291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,10 +184,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 88939393703258834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8dc71402911b774dad0ed358b3df71e, type: 3}
+  m_Script: {fileID: 11500000, guid: 66e842f0ba075c34c8490caa8d782d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityGranted: 0
+  blindDuration: 2.5
 --- !u!1 &3118738640396362254
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +213,7 @@ Transform:
   m_GameObject: {fileID: 3118738640396362254}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.15, y: -0.03, z: 0.04210861}
+  m_LocalPosition: {x: -1.77, y: -0.39, z: 0.04210861}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -197,7 +244,7 @@ Transform:
   m_GameObject: {fileID: 5411135227731257748}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 132.85, y: -21.82, z: -0.04210861}
+  m_LocalPosition: {x: 80.68, y: 0.14, z: -0.04210861}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -231,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 6938366111513621264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.26, y: -0.04, z: 0.04210861}
+  m_LocalPosition: {x: 3.16, y: -0.44, z: 0.04210861}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

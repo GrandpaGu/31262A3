@@ -36,13 +36,20 @@ public class EnvironmentDetector : MonoBehaviour
 
         (inWater, fullySubmerged) = SampleEnvironment(waterTilemap);
 
-        if (fullySubmerged)
+        bool canBreathe = false;
+        var slime = GetComponent<Level2SlimeController>();
+        if (slime != null) canBreathe = slime.hasSwimAbility;   // ★ 是否拥有 Swim
+
+        if (fullySubmerged && !canBreathe)
         {
             submergedTimer += Time.deltaTime;
             if (submergedTimer >= drownTime)
             {
                 Debug.Log("[EnvDetector] 玩家已淹死！");
                 submergedTimer = 0f;
+
+                // 直接调用死亡逻辑
+                GetComponent<Level2SlimeController>()?.Die();
                 // TODO：调用死亡逻辑
                 // GetComponent<Level2SlimeController>()?.Die();
             }
@@ -79,7 +86,7 @@ public class EnvironmentDetector : MonoBehaviour
                 Debug.Log("[EnvDetector] 玩家被岩浆灼烧致死！");
                 lavaTimer = 0f;
                 // TODO：调用死亡逻辑
-                // GetComponent<Level2SlimeController>()?.Die();
+                GetComponent<Level2SlimeController>()?.Die();
             }
         }
         else
