@@ -83,10 +83,22 @@ public class EnvironmentDetector : MonoBehaviour
 
             if (lavaTimer >= lavaDeathDelay)
             {
-                Debug.Log("[EnvDetector] 玩家被岩浆灼烧致死！");
-                lavaTimer = 0f;
-                // TODO：调用死亡逻辑
-                GetComponent<Level2SlimeController>()?.Die();
+                var slime = GetComponent<Level2SlimeController>();
+                if (slime != null)
+                {
+                    if (slime.immuneToLava)
+                    {
+                        lavaTimer = 0f;
+                        Debug.Log("[EnvDetector] 玩家已免疫岩浆，不受伤！");
+                        return;
+                    }
+                    else
+                    {
+                        Debug.Log("[EnvDetector] 玩家被岩浆灼烧致死！");
+                        lavaTimer = 0f;
+                        slime.Die();
+                    }
+                }
             }
         }
         else
