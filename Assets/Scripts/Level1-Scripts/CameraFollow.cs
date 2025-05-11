@@ -4,7 +4,7 @@ using UnityEngine;
 /// Follows a target with SmoothDamp + dead-zone + horizontal look-ahead.
 /// Attach to the Main Camera.
 /// </summary>
-public class CameraFollowYOnlyL1 : MonoBehaviour
+public class CameraFollowYOnly : MonoBehaviour
 {
     [Header("Target")]
     public Transform target;                 // Player (or any object) to track
