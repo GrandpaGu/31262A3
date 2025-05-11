@@ -8,6 +8,7 @@ TagManager:
   - Mushroom
   - Bat
   - Finish line
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - OnewayPlatform
   - Swallowable
   - Ladder
-  - 
-  - 
+  - Water
+  - Wolf
   - 
   - 
   - 
