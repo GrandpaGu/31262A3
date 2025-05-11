@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 198302d2f106fcd45a14cde7e0141ddf
+guid: 799fef712fa92d8438e20cc5d7cbc93d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5160337174065941027
-    second: Bat-Sleep_0
-  - first:
-      213: 5719716247012904364
-    second: Bat-Sleep_1
-  - first:
-      213: -5379846406165079992
-    second: Bat-Sleep_2
+      213: 5095086549843570283
+    second: "\u5730\u56FE_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -79,7 +73,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bat-Sleep_0
+      name: "\u5730\u56FE_0"
       rect:
         serializedVersion: 2
-        x: 26
-        y: 25
-        width: 12
-        height: 26
+        x: 0
+        y: 0
+        width: 1035
+        height: 276
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,50 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32a8175b1533d9740800000000000000
-      internalID: 5160337174065941027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bat-Sleep_1
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 25
-        width: 12
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cad0c3f4f93806f40800000000000000
-      internalID: 5719716247012904364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bat-Sleep_2
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 25
-        width: 12
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8485e5e7232f655b0800000000000000
-      internalID: -5379846406165079992
+      spriteID: b6eeb4fd83265b640800000000000000
+      internalID: 5095086549843570283
       vertices: []
       indices: 
       edges: []
@@ -179,9 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bat-Sleep_0: 5160337174065941027
-      Bat-Sleep_1: 5719716247012904364
-      Bat-Sleep_2: -5379846406165079992
+      "\u5730\u56FE_0": 5095086549843570283
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

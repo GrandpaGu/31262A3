@@ -1,10 +1,10 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 /// <summary>
 /// Follows a target with SmoothDamp + dead-zone + horizontal look-ahead.
 /// Attach to the Main Camera.
 /// </summary>
-public class CameraFollowYOnly : MonoBehaviour
+public class CameraFollowYOnlyL3 : MonoBehaviour
 {
     [Header("Target")]
     public Transform target;                 // Player (or any object) to track
@@ -21,7 +21,7 @@ public class CameraFollowYOnly : MonoBehaviour
     [Header("Follow smoothing")]
     public float smoothTime = 0.15f;         // Damping for the main camera movement
 
-    // ©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤
+    // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
     Vector3 _currentVelocity = Vector3.zero; // For SmoothDamp
     float _currentLookAhead = 0f;          // Smoothed look-ahead offset
     float _lookAheadVel = 0f;          // For look-ahead SmoothDamp
@@ -36,9 +36,9 @@ public class CameraFollowYOnly : MonoBehaviour
     {
         if (!target) return;
 
-        /*©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤*
+        /*â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*
          *   DEAD-ZONE LOGIC    *
-         *©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤*/
+         *â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
         // Distance between player and camera centre (ignoring offset & Z)
         Vector2 delta = target.position - (transform.position - offset);
 
@@ -54,9 +54,9 @@ public class CameraFollowYOnly : MonoBehaviour
                         - Mathf.Sign(delta.y) * deadZoneHeight * 0.5f
                         + offset.y;
 
-        /*©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤*
+        /*â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*
          *   LOOK-AHEAD LOGIC  *
-         *©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤*/
+         *â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
         Vector3 targetMovement = target.position - _prevTargetPos;
         float moveDir = Mathf.Sign(targetMovement.x);
         float lookAheadTarget = (Mathf.Abs(targetMovement.x / Time.deltaTime) > 0.01f)
@@ -70,9 +70,9 @@ public class CameraFollowYOnly : MonoBehaviour
 
         desired.x += _currentLookAhead;      // Apply peek
 
-        /*©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤*
+        /*â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*
          *   FINAL SMOOTH MOVE *
-         *©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤*/
+         *â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/
         transform.position = Vector3.SmoothDamp(transform.position,
                                                 desired,
                                                 ref _currentVelocity,
