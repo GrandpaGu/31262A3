@@ -13,7 +13,7 @@ public class LevelTransition : MonoBehaviour
             
             transitionAnimator.SetTrigger("FadeOut");
 
-            Invoke("LoadNextScene", 3f);
+            Invoke("LoadNextScene", 1f);
         }
     }
 
