@@ -13,8 +13,8 @@ public class SlimeSwallow : MonoBehaviour
     [Header("Õ‚≤ø◊Èº˛")]
     public SlimeAbilityManager abilityMgr;   // °ÅEInspector Õœ Slime Ω¯¿¥
 
-    /*©§©§©§©§©§©§©§©§ ºÅE‚…Ë÷√ ©§©§©§©§©§©§©§©§*/
-    [Header("ºÅE‚…Ë÷√")]
+    /*©§©§©§©§©§©§©§©§ ºÅE‚…Ë÷?©§©§©§©§©§©§©§©§*/
+    [Header("ºÅE‚…Ë÷")]
     public Transform swallowCenter;
     public float swallowRadius = 1f;
     public LayerMask swallowableLayer;
@@ -38,7 +38,7 @@ public class SlimeSwallow : MonoBehaviour
     List<Ability> slots = new();
     int currentIndex = 0;
 
-    /*©§©§©§©§©§©§©§©§ ◊¥Ã¨±ÅEæ ©§©§©§©§©§©§©§©§*/
+    /*©§©§©§©§©§©§©§©§ ◊¥Ã¨±ÅE?©§©§©§©§©§©§©§©§*/
     bool swallowedThisPress = false;
 
     Animator anim;
@@ -51,7 +51,7 @@ public class SlimeSwallow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         if (!abilityMgr)
-            abilityMgr = GetComponent<SlimeAbilityManager>(); // Õ¨ŒÅEÂ…œ◊‘∂Ø»°
+            abilityMgr = GetComponent<SlimeAbilityManager>(); // Õ¨ŒÅEÂ…œ◊‘∂Ø»?
     }
 
     /*================ Update ===============*/

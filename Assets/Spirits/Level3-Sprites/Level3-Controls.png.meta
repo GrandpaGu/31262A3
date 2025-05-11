@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 79adc44a7b945174ab9b498ca30512d3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7417356413637717930
+    second: Level3-Controls_0
+  - first:
+      213: -1116212578834522532
+    second: Level3-Controls_1
+  - first:
+      213: -4321363347530635935
+    second: Level3-Controls_2
+  - first:
+      213: -152494897288645309
+    second: Level3-Controls_3
+  - first:
+      213: -8788174263069263805
+    second: Level3-Controls_4
+  - first:
+      213: -2511563379826622380
+    second: Level3-Controls_5
+  - first:
+      213: 7877874782067065858
+    second: Level3-Controls_6
+  - first:
+      213: -9006140602326414792
+    second: Level3-Controls_7
+  - first:
+      213: 8263666681427065071
+    second: Level3-Controls_8
+  - first:
+      213: 1080458834587901398
+    second: Level3-Controls_9
+  - first:
+      213: 5064372541973475045
+    second: Level3-Controls_10
+  - first:
+      213: 6450485089181261920
+    second: Level3-Controls_11
+  - first:
+      213: 7412908465900034010
+    second: Level3-Controls_12
+  - first:
+      213: -6038220453408669309
+    second: Level3-Controls_13
+  - first:
+      213: 3385635576141401869
+    second: Level3-Controls_14
+  - first:
+      213: -1544509909263955606
+    second: Level3-Controls_15
+  - first:
+      213: 1999085191728393587
+    second: Level3-Controls_16
+  - first:
+      213: -1352225917726756643
+    second: Level3-Controls_17
+  - first:
+      213: 1596445622260038972
+    second: Level3-Controls_18
+  - first:
+      213: 1622394681656292312
+    second: Level3-Controls_19
+  - first:
+      213: 9155348792203339310
+    second: Level3-Controls_20
+  - first:
+      213: -7422184408709361020
+    second: Level3-Controls_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Level3-Controls_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 127
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf675ffb5ebfe660800000000000000
+      internalID: 7417356413637717930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 118
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5edeb0d29a6280f0800000000000000
+      internalID: -1116212578834522532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 118
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1652b055eee6704c0800000000000000
+      internalID: -4321363347530635935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 118
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345fc09e2ba32edf0800000000000000
+      internalID: -152494897288645309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348b689c1122a0680800000000000000
+      internalID: -8788174263069263805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4500e82b962252dd0800000000000000
+      internalID: -2511563379826622380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 118
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2048d122065d35d60800000000000000
+      internalID: 7877874782067065858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a8c19b6d2c30380800000000000000
+      internalID: -9006140602326414792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_8
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 82
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8f0b060117ea270800000000000000
+      internalID: 8263666681427065071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd5b06e59f8efe00800000000000000
+      internalID: 1080458834587901398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee2296aef3484640800000000000000
+      internalID: 5064372541973475045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 84
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0606a91330ab48950800000000000000
+      internalID: 6450485089181261920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_12
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7157679f0ffd660800000000000000
+      internalID: 7412908465900034010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381041f4d7ee33ca0800000000000000
+      internalID: -6038220453408669309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f45de5e913cfe20800000000000000
+      internalID: 3385635576141401869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a694042bb6cc09ae0800000000000000
+      internalID: -1544509909263955606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_16
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 69
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37de6b8e36d2ebb10800000000000000
+      internalID: 1999085191728393587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_17
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 69
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0f1d531bdeb3de0800000000000000
+      internalID: -1352225917726756643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 69
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d790ac5d6b72610800000000000000
+      internalID: 1596445622260038972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 69
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d33b9dfd57e38610800000000000000
+      internalID: 1622394681656292312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_20
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 69
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26e41a28355e0f70800000000000000
+      internalID: 9155348792203339310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3-Controls_21
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 69
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4829f6dca9a1ff890800000000000000
+      internalID: -7422184408709361020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Level3-Controls_0: 7417356413637717930
+      Level3-Controls_1: -1116212578834522532
+      Level3-Controls_10: 5064372541973475045
+      Level3-Controls_11: 6450485089181261920
+      Level3-Controls_12: 7412908465900034010
+      Level3-Controls_13: -6038220453408669309
+      Level3-Controls_14: 3385635576141401869
+      Level3-Controls_15: -1544509909263955606
+      Level3-Controls_16: 1999085191728393587
+      Level3-Controls_17: -1352225917726756643
+      Level3-Controls_18: 1596445622260038972
+      Level3-Controls_19: 1622394681656292312
+      Level3-Controls_2: -4321363347530635935
+      Level3-Controls_20: 9155348792203339310
+      Level3-Controls_21: -7422184408709361020
+      Level3-Controls_3: -152494897288645309
+      Level3-Controls_4: -8788174263069263805
+      Level3-Controls_5: -2511563379826622380
+      Level3-Controls_6: 7877874782067065858
+      Level3-Controls_7: -9006140602326414792
+      Level3-Controls_8: 8263666681427065071
+      Level3-Controls_9: 1080458834587901398
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

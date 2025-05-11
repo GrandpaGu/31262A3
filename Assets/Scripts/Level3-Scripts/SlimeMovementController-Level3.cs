@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
-using UnityEditor.Tilemaps;
+
 using UnityEngine;
 
 public class SlimeControllerL3 : MonoBehaviour
@@ -163,7 +163,7 @@ public class SlimeControllerL3 : MonoBehaviour
         if (isBouncing) return;
         rb.gravityScale = defaultGravityScale;
         MoveHorizontal();
-        
+
     }
 
     /*==================== Input =================*/
@@ -191,7 +191,7 @@ public class SlimeControllerL3 : MonoBehaviour
 
         rb.velocity = new Vector2(h * moveSpeed, rb.velocity.y);
 
-       
+
 
         if (animator) animator.SetFloat("Speed", Mathf.Abs(h));
 
@@ -203,7 +203,7 @@ public class SlimeControllerL3 : MonoBehaviour
 
 
 
-    
+
 
     /*================ Vertical Move ==============*/
     void MoveVertical()
@@ -264,7 +264,7 @@ public class SlimeControllerL3 : MonoBehaviour
         }
     }
 
-   
+
 
     void EvaluateContacts(Collision2D col)
     {
@@ -352,20 +352,20 @@ public class SlimeControllerL3 : MonoBehaviour
         canWallBounce = false;
         isBouncing = true;
 
-        
+
         rb.velocity = new Vector2(bounceDirection * wallBounceXForce, wallBounceYForce);
 
-       
+
         float newScaleX = bounceDirection == -1 ? -Mathf.Abs(originalScale.x) : Mathf.Abs(originalScale.x);
         transform.localScale = new Vector3(newScaleX, transform.localScale.y, transform.localScale.z);
 
-        
+
         transform.position += new Vector3(bounceDirection * 0.05f, 0f, 0f);
 
         Debug.Log("Wall bounce executed");
 
         Invoke(nameof(ResetWallBounce), wallBounceCooldown);
-        Invoke(nameof(EndBounce), 0.15f); 
+        Invoke(nameof(EndBounce), 0.15f);
     }
 
 
