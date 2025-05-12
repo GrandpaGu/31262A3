@@ -20,11 +20,14 @@ public class KnockbackReceiver : MonoBehaviour
 
     IEnumerator DoKnock(Vector2 impulse, float lockTime)
     {
-        ctrl.enabled = false;        // 暂停玩家控制
-        rb.velocity = Vector2.zero; // 清旧速度
+        ctrl.StartKnockback(lockTime);  // 启动击退状态
+
+        ctrl.enabled = false;
+        rb.velocity = Vector2.zero;
         rb.AddForce(impulse, ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(lockTime);
+
         ctrl.enabled = true;
     }
 }

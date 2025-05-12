@@ -25,6 +25,7 @@ public class Level2SlimeController : MonoBehaviour
     [HideInInspector] public bool hasSwimAbility = false;
     [HideInInspector] public float waterDragFactor = 1f;   // 默认 1
     [HideInInspector] public bool immuneToLava = false;
+    [HideInInspector] public bool hasWaterproofItem = false;
     /*──────── 私有状态 ────────*/
     int extraJumps; bool isGrounded, isOnWall, isWallJumping;
     bool inLadderZone, climbingLadder, isSwallowing, platformIgnored;
@@ -60,6 +61,19 @@ public class Level2SlimeController : MonoBehaviour
         if (animator) animator.SetBool("IsJumping", !isGrounded);
     }
 
+    [HideInInspector] public bool isKnockback = false;
+
+    public void StartKnockback(float duration)
+    {
+        StartCoroutine(KnockbackLock(duration));
+    }
+
+    IEnumerator KnockbackLock(float t)
+    {
+        isKnockback = true;
+        yield return new WaitForSeconds(t);
+        isKnockback = false;
+    }
     void FixedUpdate()
     {
         if (isSwallowing)
@@ -111,10 +125,12 @@ public class Level2SlimeController : MonoBehaviour
             EnterLadder();
     }
     #endregion
-    
+
     #region 移动
     void MoveHorizontal()
     {
+        if (isKnockback) return;  // 击退期间禁止移动控制
+
         float h = Input.GetAxisRaw("Horizontal");
         float vx = h * moveSpeed + swallowOffset / Time.fixedDeltaTime;
         swallowOffset = 0f;

@@ -38,7 +38,8 @@ public class EnvironmentDetector : MonoBehaviour
 
         bool canBreathe = false;
         var slime = GetComponent<Level2SlimeController>();
-        if (slime != null) canBreathe = slime.hasSwimAbility;   // ★ 是否拥有 Swim
+        if (slime != null)
+            canBreathe = slime.hasSwimAbility || slime.hasWaterproofItem;  // ✅ 新增防水道具判定
 
         if (fullySubmerged && !canBreathe)
         {
