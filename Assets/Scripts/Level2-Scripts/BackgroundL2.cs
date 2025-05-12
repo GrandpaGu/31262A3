@@ -4,16 +4,17 @@ using UnityEngine;
 public class ParallaxTiler : MonoBehaviour
 {
     [Header("References")]
-    public Transform cam;  // 拖 MainCamera
+    public Transform cam;  // 拖 Main Camera
 
     [Header("Parallax Settings")]
-    public float parallaxMultiplierX = 0.1f;  // 横向视差比例
+    public float parallaxMultiplierX = 0.1f;    // 横向视差比例
+    public int redundancy = 2;                  // 冗余平铺数量（左右各几个）
 
-    SpriteRenderer srcSR;
-    float spriteW;
-    float camHalfW;
-    Transform left, centre, right;
-    Vector3 startPos;
+    private SpriteRenderer srcSR;
+    private float spriteW;
+    private float camHalfW;
+    private Transform[] tiles;
+    private Vector3 startPos;
 
     void Awake()
     {
@@ -24,9 +25,22 @@ public class ParallaxTiler : MonoBehaviour
         camHalfW = Camera.main.orthographicSize * Camera.main.aspect;
         startPos = transform.position;
 
-        left = MakeClone("BG_Left", -spriteW, transform.parent);
-        centre = transform;
-        right = MakeClone("BG_Right", spriteW, transform.parent);
+        int totalTiles = 1 + redundancy * 2;
+        tiles = new Transform[totalTiles];
+
+        // 创建冗余平铺对象
+        for (int i = -redundancy; i <= redundancy; i++)
+        {
+            int index = i + redundancy;
+            if (i == 0)
+            {
+                tiles[index] = transform; // 中心块直接用自己
+            }
+            else
+            {
+                tiles[index] = MakeClone($"BG_Tile_{i}", i * spriteW, transform.parent);
+            }
+        }
     }
 
     Transform MakeClone(string name, float offsetX, Transform parent)
@@ -46,39 +60,51 @@ public class ParallaxTiler : MonoBehaviour
 
     void LateUpdate()
     {
-        /* 横向视差计算，仅影响 X 方向 */
+        if (!cam) return;
+
         float parallaxX = cam.position.x * parallaxMultiplierX;
 
-        left.position = new Vector3(startPos.x - spriteW + parallaxX, left.position.y, left.position.z);
-        centre.position = new Vector3(startPos.x + parallaxX, centre.position.y, centre.position.z);
-        right.position = new Vector3(startPos.x + spriteW + parallaxX, right.position.y, right.position.z);
+        for (int i = 0; i < tiles.Length; i++)
+        {
+            float tileOffsetX = (i - redundancy) * spriteW;
+            tiles[i].position = new Vector3(startPos.x + tileOffsetX + parallaxX, tiles[i].position.y, tiles[i].position.z);
+        }
 
-        /* 平铺循环逻辑 */
-        float camX = cam.position.x;
+        // 摄像机边界检测，调整 tile 顺序
+        float camLeftEdge = cam.position.x - camHalfW;
+        float camRightEdge = cam.position.x + camHalfW;
 
-        if (camX > centre.position.x + spriteW * 0.5f)
+        // 如果最右的 tile 左边已经进入摄像机左边界，则循环左移
+        if (camLeftEdge > tiles[redundancy].position.x + spriteW * 0.5f)
+        {
             ShiftRight();
-        else if (camX < centre.position.x - spriteW * 0.5f)
+        }
+        // 如果最左的 tile 右边已经进入摄像机右边界，则循环右移
+        else if (camRightEdge < tiles[redundancy].position.x - spriteW * 0.5f)
+        {
             ShiftLeft();
+        }
     }
 
     void ShiftRight()
     {
-        left.position = right.position + Vector3.right * spriteW;
-
-        Transform temp = left;
-        left = centre;
-        centre = right;
-        right = temp;
+        Transform leftMost = tiles[0];
+        for (int i = 0; i < tiles.Length - 1; i++)
+        {
+            tiles[i] = tiles[i + 1];
+        }
+        tiles[tiles.Length - 1] = leftMost;
+        leftMost.position = tiles[tiles.Length - 2].position + Vector3.right * spriteW;
     }
 
     void ShiftLeft()
     {
-        right.position = left.position - Vector3.right * spriteW;
-
-        Transform temp = right;
-        right = centre;
-        centre = left;
-        left = temp;
+        Transform rightMost = tiles[tiles.Length - 1];
+        for (int i = tiles.Length - 1; i > 0; i--)
+        {
+            tiles[i] = tiles[i - 1];
+        }
+        tiles[0] = rightMost;
+        rightMost.position = tiles[1].position - Vector3.right * spriteW;
     }
 }

@@ -6,11 +6,11 @@ public class EnvironmentDetector : MonoBehaviour
 {
     [Header("水体 Tilemap")]
     public Tilemap waterTilemap;
-    public float drownTime = 2f;
+    public float drownTime = 1f;
 
     [Header("岩浆 Tilemap")]
     public Tilemap lavaTilemap;
-    public float lavaDeathDelay = 1f;
+    public float lavaDeathDelay = 0.5f;
 
     Collider2D col;
 

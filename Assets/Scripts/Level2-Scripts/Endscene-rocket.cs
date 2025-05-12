@@ -9,25 +9,42 @@ public class RocketLaunch : MonoBehaviour
     public float launchSpeed = 6f;
 
     [Header("References")]
-    public Animator fireAnimator;
+    public GameObject rocket;               // 拖 Slime 子物体 Rocket
+    public Animator rocketAnimator;         // 拖 Rocket 的 Animator
     public CanvasGroup whiteOverlay;
-    public TextMeshPro endingText;
+    public TextMeshProUGUI endingText;
 
-    [Header("Slime Sync")]
-    public Transform slime;
-    public float slimeYOffset = -0.5f;
+    [Header("Slime Control")]
+    public Transform slime;  // ← 新增这个！
     public MonoBehaviour[] controlScripts;
+    public BackgroundVerticalMapping backgroundScript;
+
 
     [Header("Scene")]
     public string nextSceneName;
 
     bool _ascending = false;
 
-    void Start()
+    public void StartLaunch()
     {
-        whiteOverlay.alpha = 0f;
-        endingText.gameObject.SetActive(false);
-        // 移除自动发射，等待触发调用 StartLaunch()
+        foreach (var s in controlScripts) if (s) s.enabled = false;
+        if (backgroundScript) backgroundScript.enabled = false;
+
+        if (rocket) rocket.SetActive(true);
+        if (rocketAnimator) rocketAnimator.Play("Start");
+
+        // ✅ 锁定摄像机
+        CameraFollowYOnlyL2 camControl = Camera.main.GetComponent<CameraFollowYOnlyL2>();
+        if (camControl) camControl.lockCamera = true;
+
+        // ✅ 禁用 Slime 的物理组件防止卡住
+        Collider2D slimeCol = slime.GetComponent<Collider2D>();
+        if (slimeCol) slimeCol.enabled = false;
+
+        Rigidbody2D slimeRb = slime.GetComponent<Rigidbody2D>();
+        if (slimeRb) slimeRb.simulated = false;
+
+        StartCoroutine(LaunchRoutine());
     }
 
     void Update()
@@ -35,37 +52,20 @@ public class RocketLaunch : MonoBehaviour
         if (_ascending)
         {
             transform.position += Vector3.up * launchSpeed * Time.deltaTime;
-
-            if (slime)
-            {
-                Vector3 s = slime.position;
-                s.y = transform.position.y + slimeYOffset;
-                slime.position = s;
-            }
         }
-    }
-
-    public void StartLaunch()
-    {
-        StartCoroutine(LaunchRoutine());
     }
 
     System.Collections.IEnumerator LaunchRoutine()
     {
-        foreach (var s in controlScripts) if (s) s.enabled = false;
-
-        // 锁定摄像机
-        var camControl = Camera.main.GetComponent<CameraFollowYOnlyL2>();
-        if (camControl) camControl.lockCamera = true;
-
-        fireAnimator.Play("Start");
         yield return new WaitForSeconds(startDuration);
 
-        fireAnimator.Play("Loop");
+        if (rocketAnimator) rocketAnimator.Play("Loop");
         _ascending = true;
 
         while (transform.position.y < Camera.main.transform.position.y + 5f)
             yield return null;
+
+        Debug.Log("[Fade] 开始渐变...");
 
         while (whiteOverlay.alpha < 1f)
         {
@@ -73,11 +73,12 @@ public class RocketLaunch : MonoBehaviour
             yield return null;
         }
 
-        endingText.text = "我在天空四处张望，这里没有什么上帝和救世主，只有地球和他的人民";
+        Debug.Log("[Fade] 渐变完成！");
+
+        endingText.text = "I wandered the skies in search of gods and saviors, but found only the Earth and its people.";
         endingText.gameObject.SetActive(true);
 
         yield return new WaitForSeconds(4f);
-
         SceneManager.LoadScene(nextSceneName);
     }
 }
